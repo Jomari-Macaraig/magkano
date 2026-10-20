@@ -29,5 +29,5 @@ Vite + React + TypeScript SPA with React Router and Clerk. Mobile-first, English
 
 ## Env
 
-- `VITE_CLERK_PUBLISHABLE_KEY` (required; the app refuses to start without it).
+- `VITE_CLERK_PUBLISHABLE_KEY` (required; the app refuses to start without it, and `vite build` fails without it since the key is baked in at build time; `vite dev` doesn't check).
 - `API_PORT` (optional, default 8787): where the dev proxy sends `/api`.

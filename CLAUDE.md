@@ -14,6 +14,10 @@ Default five-role vocabulary (needs-triage, needs-info, ready-for-agent, ready-f
 
 Single-context: one `GLOSSARY.md` + `docs/adr/` at the repo root. See `docs/agents/domain.md`.
 
+## Deployment
+
+Production runs on `https://magkano.online` (Vercel + Neon + Clerk), with a preview deployment per pull request. See [deploy/CLAUDE.md](deploy/CLAUDE.md).
+
 ## Local development
 
 Needs Node 22+, pnpm 10 and Docker.
@@ -37,4 +41,4 @@ Root scripts: `pnpm extract <pdf>`, `pnpm tag [--check]`, `pnpm seed`, `pnpm typ
 - [apps/api/src/seed/CLAUDE.md](apps/api/src/seed/CLAUDE.md): `pnpm seed`, its checks (all problems listed, nothing written on failure), the one-transaction wipe and reload, Recipe chunk embeddings
 - [apps/api/src/search/CLAUDE.md](apps/api/src/search/CLAUDE.md): `GET /api/search`, chunk text, query expansion, scoring, the text fallback, the `embeddings.json` cache
 - [apps/web/CLAUDE.md](apps/web/CLAUDE.md): Vite + React SPA, Clerk header, React Router, typed API client and the `/api` dev proxy, home with search, Recipe page, the Draft (`localStorage`, debounced re-pricing), the Grocery List screen and the line page (pick a match, Price Override)
-- [deploy/CLAUDE.md](deploy/CLAUDE.md): `deploy/setup.sh`, the owner setup wizard (OpenAI, GitHub, Neon, Vercel, Clerk, GoDaddy), resuming with `--from N`, its `dig`/`curl`/`vercel`/`gh` checks, the no-secrets rule
+- [deploy/CLAUDE.md](deploy/CLAUDE.md): deployment (one Vercel project: `vercel.json`, the `api/index.ts` Function in `sin1`, the build steps, the env var matrix, the preview-can't-wipe-production rule, add-only migrations, the fallbacks) and `deploy/setup.sh`, the owner setup wizard (OpenAI, GitHub, Neon, Vercel, Clerk, GoDaddy), resuming with `--from N`, its `dig`/`curl`/`vercel`/`gh` checks, the no-secrets rule
