@@ -1,7 +1,7 @@
 # Research how Hono and the Vite SPA deploy on Vercel from this pnpm workspace
 
 Type: research
-Status: open
+Status: resolved
 Blocked by: none
 
 ## Question
@@ -16,3 +16,14 @@ Covers:
 - Running long build steps (checks, migrate, seed) in the Vercel build: time limits, network access to Neon from the build.
 
 Cite primary sources (Vercel docs, Hono docs).
+
+## Answer
+
+Resolved by research, 2026-10-21. Full findings with citations: branch `research/hono-and-vite-on-vercel`, file `.scratch/v1.1/research/01-hono-and-vite-on-vercel.md`.
+
+Neither Vercel shape is zero-config here: Hono detection wants a root entry, and the Hono and Vite presets can't share a project.
+- **Option A (GA, recommended)**: one project at the repo root on the Vite preset, output `apps/web/dist`, a root `api/index.ts` exporting a shared `buildApp(process.env)`; rewrites `/api/(.*)` → `/api` then `/(.*)` → `/index.html`; `regions: ["sin1"]`, `maxDuration: 30`. The classic Node builder compiles files one by one without bundling, so the ~109 extensionless relative imports in `apps/api` must gain `.ts` extensions (`allowImportingTsExtensions`, Biome `useImportExtensions`). Confirmed from builder source, not by deploy.
+- **Option B (Services, Beta)**: bundles with rolldown, so imports work as they are, but it's Beta and pnpm workspaces aren't documented.
+- Only what the entry imports is bundled (`pdfjs-dist`, `drizzle-kit`, scripts stay out). `server.ts` wiring moves to a shared `buildApp`, and local dev is unchanged. `VITE_*` vars are baked in at build time per Vercel environment. Builds get 45 min on every plan.
+- Unconfirmed until a real deploy: Hono sees the original `/api/...` path after the rewrite, and deep links serve `index.html`.
+- Open: A or B; Node 22 (`"22.x"`) or 24 (what `>=22` gets); Hobby or Pro (Hobby suffices).

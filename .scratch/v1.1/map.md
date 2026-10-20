@@ -32,6 +32,10 @@ A v1.1 spec at `.scratch/v1.1/spec.md` that `/to-tickets` can take with nothing 
 
 <!-- one line per closed ticket: [title](issues/NN-slug.md): gist -->
 
+- [Research how Hono and the Vite SPA deploy on Vercel from this pnpm workspace](issues/01-hono-and-vite-on-vercel.md): one root project on the Vite preset plus a root `api/index.ts` and rewrites; the classic builder doesn't bundle, so `apps/api` relative imports need `.ts` extensions (or use the Beta Services builder).
+- [Research the Neon–Vercel integration and connecting from Functions and the build](issues/02-neon-vercel-integration.md): Neon-Managed integration (the 10-branch Free cap rules out Vercel-Managed); pooled `DATABASE_URL` for the Function, `DATABASE_URL_UNPOOLED` for migrate and seed; keep postgres.js; `regions: ["sin1"]`.
+- [Research Clerk production on magkano.online with dev keys on previews](issues/03-clerk-production-on-magkano-online.md): production needs `magkano.online` plus Clerk's CNAMEs; previews use the dev instance; only the publishable key, per Vercel environment; production social sign-in needs the owner's own OAuth apps.
+
 ## Not yet specified
 
 - How local dev changes, if at all (it should stay `pnpm dev` with Docker). This depends on how the API entry and the DB client are split between Node and Vercel.
