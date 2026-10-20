@@ -20,7 +20,7 @@ Production runs on `https://magkano.online` (Vercel + Neon + Clerk), with a prev
 
 ## Local development
 
-Needs Node 22+, pnpm 10 and Docker.
+Needs Node 22, pnpm 10 and Docker.
 
 1. `cp .env.example .env`, then set `VITE_CLERK_PUBLISHABLE_KEY` (a Clerk development instance). `OPENAI_API_KEY` is optional.
 2. `pnpm install`

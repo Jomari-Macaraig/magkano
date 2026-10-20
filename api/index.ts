@@ -1,5 +1,4 @@
-// Vercel Function: the whole API under /api/*. vercel.json rewrites every /api/... request here,
-// and Vercel's Node runtime serves the default export through its `fetch` method.
+// Vercel Function: vercel.json rewrites /api/* here (see deploy/CLAUDE.md).
 import { buildApp } from "../apps/api/src/build-app.ts";
 
 // One pool per Function instance, created once when the module loads. Small and quick to let go

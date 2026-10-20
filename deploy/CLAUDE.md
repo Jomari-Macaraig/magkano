@@ -4,9 +4,9 @@ Magkano runs on one Vercel project: production on `magkano.online` (Neon `main`,
 
 ## Architecture
 
-- **One Vercel project at the repo root**, Hobby plan, Vite preset. Config lives in `vercel.json` (root); the dashboard only needs the repo imported.
+- **One Vercel project at the repo root**, Hobby plan, Framework Preset Vite (picked at import, wizard step 4). Build command, output, region, Function and rewrites live in `vercel.json` (root).
 - **SPA**: static files from `apps/web/dist` (`outputDirectory`).
-- **API**: one Node Function, `api/index.ts` (root), in `sin1` (Singapore, next to Neon's `aws-ap-southeast-1`), `maxDuration: 30`. Its default export is `buildApp(process.env, ...)` from `apps/api/src/build-app.ts`; Vercel serves it through its `fetch` method. It holds one module-scope postgres.js pool per instance on the pooled `DATABASE_URL`: `{ max: 5, idle_timeout: 5, connect_timeout: 10 }`. It imports only from `apps/api/src`, so the root package has no runtime dependencies and only what it imports is bundled (not `pdfjs-dist`, `drizzle-kit` or the scripts).
+- **API**: one Node Function, `api/index.ts` (root), in `sin1` (Singapore, next to Neon's `aws-ap-southeast-1`), `maxDuration: 30`. Its default export is `buildApp(process.env, ...)` from `apps/api/src/build-app.ts`; Vercel serves it through its `fetch` method. It holds one small module-scope postgres.js pool per instance on the pooled `DATABASE_URL` (options in `api/index.ts`). It imports only from `apps/api/src`, so the root package has no runtime dependencies and only what it imports is bundled (not `pdfjs-dist`, `drizzle-kit` or the scripts).
 - **Rewrites** (order matters): `/api/(.*)` → `/api` (the Function; Hono keeps `basePath("/api")` and must see the original path), then `/(.*)` → `/index.html` so deep links like `/recipes/<id>` serve the SPA. Static assets (`/assets/*`) are served before rewrites apply.
 - Same origin for SPA and API, so no CORS. `www` → apex and HTTP → HTTPS are Vercel domain settings, not rewrites.
 - Node is pinned by root `package.json` `"engines": { "node": "22.x" }`. Root `tsconfig.json` covers `api/`; `pnpm typecheck` runs it after the workspace typechecks.
@@ -17,7 +17,7 @@ Magkano runs on one Vercel project: production on `magkano.online` (Neon `main`,
 `vercel.json`'s `buildCommand`, in order, and any failure stops the deploy (a failed production build leaves the previous deployment serving):
 
 1. `pnpm lint`, `pnpm typecheck`, `pnpm test` (tests never need Postgres).
-2. `pnpm db:migrate` then `pnpm seed`, both on `DATABASE_URL_UNPOOLED ?? DATABASE_URL`. Each prints `migrate: env=<VERCEL_ENV|local> host=<host>` (host only, never the URL) before writing, so the log shows which database a build writes to. `seed` re-runs its one-transaction wipe and reload on every build, production included. If Recipe chunks are missing from `apps/api/data/embeddings.json`, seed embeds them and, on Vercel, warns to run `pnpm seed` locally and commit the file.
+2. `pnpm db:migrate` then `pnpm seed`, both on `DATABASE_URL_UNPOOLED ?? DATABASE_URL`. Each prints `<task>: env=<VERCEL_ENV|local> host=<host>` (host only, never the URL) before writing, so the log shows which database a build writes to. `seed` re-runs its one-transaction wipe and reload on every build, production included. If Recipe chunks are missing from `apps/api/data/embeddings.json`, seed embeds them and, on Vercel, warns to run `pnpm seed` locally and commit the file.
 3. `pnpm --filter @magkano/web build`: `vite build` throws when `VITE_CLERK_PUBLISHABLE_KEY` is unset (a missing key fails the deploy rather than shipping a blank page). `vite dev` doesn't check.
 
 To run it locally against Docker Postgres: `pnpm db:up`, export the `.env` vars (`set -a; . ./.env; set +a`), then run the `buildCommand`.
@@ -28,7 +28,7 @@ To run it locally against Docker Postgres: `pnpm db:up`, export the `.env` vars 
 |---|---|---|---|---|
 | `DATABASE_URL` | Docker, `localhost:5435` | injected per deployment by Neon (pooled, branch `preview/<git-branch>`) | Neon `main`, pooled (Production only) | Function; migrate and seed fallback |
 | `DATABASE_URL_UNPOOLED` | not set | injected per deployment by Neon (direct) | Neon `main`, direct (Production only) | migrate, seed |
-| `OPENAI_API_KEY` | optional | set | set | Function (query embeddings); seed (new chunks only) |
+| `OPENAI_API_KEY` | optional | set (same project key) | set | Function (query embeddings); seed (new chunks only) |
 | `VITE_CLERK_PUBLISHABLE_KEY` | `pk_test_…` | `pk_test_…` (dev instance) | `pk_live_…` (production instance) | web build (baked in) |
 | `API_PORT` | optional, `8787` | not set | not set | local `server.ts`, Vite proxy |
 | `VERCEL`, `VERCEL_ENV` | not set | set by Vercel | set by Vercel | migrate and seed log line; seed's embeddings warning |
@@ -42,7 +42,7 @@ Production's `DATABASE_URL` and `DATABASE_URL_UNPOOLED` exist only in Vercel's *
 
 ## Migrations are add-only
 
-Migrate runs before the new deployment goes live, so the running one must keep working on the migrated schema: new tables, new nullable or defaulted columns, new indexes only. A destructive change takes two deploys: stop using the column or table, then drop it.
+Migrate runs before the new deployment goes live, so the running one must keep working on the migrated schema. The rule (what's allowed, and the two-deploy path for a destructive change) is in `apps/api/CLAUDE.md`, under `migrations/`.
 
 ## Fallbacks
 
