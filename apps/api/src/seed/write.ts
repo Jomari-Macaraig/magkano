@@ -5,18 +5,21 @@ import {
   ingredients,
   priceObservations,
   publications,
+  recipeChunks,
   recipes,
   tagAliases,
   tags,
   unitConversions,
 } from "../db/schema";
+import type { RecipeChunk } from "../search/embeddings";
 import type { SeedPlan } from "./seed";
 
 /**
- * Wipes every table and loads `plan`, all in one transaction: a failure leaves the old data.
- * Identities restart, so the same plan always gives the same rows and ids.
+ * Wipes every table and loads `plan` and the Recipes' embedded search chunks, all in one
+ * transaction: a failure leaves the old data. Identities restart, so the same plan always
+ * gives the same rows and ids.
  */
-export async function writeSeedPlan(db: Db, plan: SeedPlan): Promise<void> {
+export async function writeSeedPlan(db: Db, plan: SeedPlan, chunks: RecipeChunk[]): Promise<void> {
   await db.transaction(async (tx) => {
     await tx.execute(sql`
       TRUNCATE tags, tag_aliases, unit_conversions, recipes, ingredients, recipe_chunks,
@@ -73,6 +76,7 @@ export async function writeSeedPlan(db: Db, plan: SeedPlan): Promise<void> {
         })),
       ),
     );
+    await insertAll(tx, recipeChunks, chunks);
 
     const publicationIds = new Map<string, number>();
     for (const { file, ...publication } of plan.publications) {

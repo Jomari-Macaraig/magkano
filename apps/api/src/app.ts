@@ -6,10 +6,11 @@ import type { CatalogStore } from "./pricing/catalog";
 import { priceDraft } from "./pricing/price";
 import { priceRequestSchema } from "./pricing/request";
 import type { RecipeStore } from "./recipes";
+import type { RecipeSearch } from "./search/search";
 import { validate } from "./validate";
 
 /** What the routes read from. */
-export type AppDeps = { recipes: RecipeStore; catalog: CatalogStore };
+export type AppDeps = { recipes: RecipeStore; catalog: CatalogStore; search: RecipeSearch };
 
 /** Builds the API. Every route lives under `/api`. */
 export function createApp(deps: AppDeps) {
@@ -37,6 +38,11 @@ export function createApp(deps: AppDeps) {
       if (!recipe) return errorResponse(c, 404, "not_found", `No Recipe "${id}"`);
       return c.json(recipe, 200);
     })
+    .get(
+      "/search",
+      validate("query", z.object({ q: z.string().max(200).default("") })),
+      async (c) => c.json(await deps.search.search(c.req.valid("query").q), 200),
+    )
     .post("/price", validate("json", priceRequestSchema), async (c) =>
       c.json(priceDraft(await deps.catalog.catalog(), c.req.valid("json")), 200),
     );

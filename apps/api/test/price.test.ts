@@ -1,9 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { createApp } from "../src/app";
 import type { Catalog } from "../src/pricing/catalog";
-import type { RecipeStore } from "../src/recipes";
-
-const noRecipes: RecipeStore = { list: async () => [], get: async () => null };
+import { noRecipes, noSearch } from "./stubs";
 
 /** A one-Recipe Catalog: enough to see the route answer; pricing itself is tested in src/pricing. */
 const catalog: Catalog = {
@@ -34,7 +32,11 @@ const catalog: Catalog = {
   ],
 };
 
-const app = createApp({ recipes: noRecipes, catalog: { catalog: async () => catalog } });
+const app = createApp({
+  recipes: noRecipes,
+  catalog: { catalog: async () => catalog },
+  search: noSearch,
+});
 
 const post = (body: unknown) =>
   app.request("/api/price", {

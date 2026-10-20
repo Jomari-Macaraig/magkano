@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { createApp } from "../src/app";
-import type { CatalogStore } from "../src/pricing/catalog";
 import type { RecipeDetail, RecipeStore } from "../src/recipes";
+import { noCatalog, noSearch } from "./stubs";
 
 const adobo: RecipeDetail = {
   id: "chicken-adobo",
@@ -27,12 +27,12 @@ const store: RecipeStore = {
   get: async (id) => (id === adobo.id ? adobo : null),
 };
 
-const noCatalog: CatalogStore = {
-  catalog: async () => ({ tags: [], recipes: [], commodities: [] }),
-};
-
 describe("Recipe routes", () => {
-  const app = createApp({ recipes: store, catalog: noCatalog });
+  const app = createApp({
+    recipes: store,
+    catalog: noCatalog,
+    search: noSearch,
+  });
 
   it("GET /api/recipes answers the Recipe cards", async () => {
     const res = await app.request("/api/recipes");

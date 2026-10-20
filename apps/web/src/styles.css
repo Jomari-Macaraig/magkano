@@ -200,6 +200,22 @@ a {
   white-space: nowrap;
 }
 
+.search {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px 14px;
+  font: inherit;
+  color: var(--fg);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.search:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+}
+
 .card {
   grid-template-columns: 1fr auto;
   align-items: center;
