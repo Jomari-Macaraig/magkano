@@ -8,7 +8,7 @@ The committed files under `data/` are the dataset; Postgres is a copy that `seed
 
 ## Imports
 
-Every relative import in this workspace ends in `.ts` (`import { createApp } from "./app.ts"`). On Vercel the classic Node builder compiles each file separately and doesn't bundle, so an extensionless import fails at runtime. Biome's `useImportExtensions` enforces this (an error here, off in `apps/web`, which Vite bundles), and `pnpm format` adds a missing extension.
+Every relative import in this workspace ends in `.ts` (`import { createApp } from "./app.ts"`). On Vercel the classic Node builder compiles each file separately and doesn't bundle, so an extensionless import fails at runtime. Biome's `useImportExtensions` enforces this (an error everywhere except `apps/web`, which Vite bundles, so it also covers root files such as a Vercel Function entry), and `pnpm format` adds a missing extension.
 
 ## Run
 
