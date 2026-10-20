@@ -17,7 +17,8 @@
     "format": "biome check --write .",
     "test": "vitest run",
     "extract": "pnpm --filter @magkano/api extract",
-    "tag": "pnpm --filter @magkano/api tag"
+    "tag": "pnpm --filter @magkano/api tag",
+    "seed": "pnpm --filter @magkano/api seed"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.15",

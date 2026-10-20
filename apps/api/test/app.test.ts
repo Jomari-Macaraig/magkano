@@ -3,8 +3,11 @@ import { z } from "zod";
 import { createApp } from "../src/app";
 import { validate } from "../src/validate";
 
+/** These tests read no data, so the store is empty. */
+const createTestApp = () => createApp({ recipes: { list: async () => [], get: async () => null } });
+
 describe("API skeleton", () => {
-  const app = createApp();
+  const app = createTestApp();
 
   afterEach(() => {
     vi.restoreAllMocks();
@@ -26,7 +29,7 @@ describe("API skeleton", () => {
 
   it("answers an unexpected error with 500 internal, without leaking its message", async () => {
     vi.spyOn(console, "error").mockImplementation(() => {});
-    const failing = createApp().get("/boom", () => {
+    const failing = createTestApp().get("/boom", () => {
       throw new Error("secret detail");
     });
 
@@ -38,7 +41,7 @@ describe("API skeleton", () => {
 
   describe("zod validation", () => {
     // A stand-in route: real routes use the same `validate` middleware.
-    const withRoute = createApp().get(
+    const withRoute = createTestApp().get(
       "/servings",
       validate("query", z.object({ servings: z.coerce.number().int().min(1).max(20) })),
       (c) => c.json({ servings: c.req.valid("query").servings }),
@@ -52,7 +55,7 @@ describe("API skeleton", () => {
     });
 
     it("rejects a malformed JSON body with 400 invalid_input", async () => {
-      const withBody = createApp().post(
+      const withBody = createTestApp().post(
         "/echo",
         validate("json", z.object({ servings: z.number() })),
         (c) => c.json(c.req.valid("json")),
