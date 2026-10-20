@@ -16,3 +16,7 @@ Covers:
 - Running long build steps (checks, migrate, seed) in the Vercel build: time limits, network access to Neon from the build.
 
 Cite primary sources (Vercel docs, Hono docs).
+
+## Comments
+
+- Research findings: branch `research/hono-and-vite-on-vercel`, file `.scratch/v1.1/research/01-hono-and-vite-on-vercel.md`.
