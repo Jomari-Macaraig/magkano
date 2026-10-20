@@ -124,6 +124,14 @@ export function setLineState(draft: Draft, key: string, patch: Partial<LineState
   return { ...draft, lines };
 }
 
+/** Picks a match for a line; a line has one clear price, so any Price Override goes. */
+export function pickMatch(draft: Draft, key: string, commodityKey: string): Draft {
+  return setLineState(draft, key, {
+    pickedCommodityKey: commodityKey,
+    overrideCentavos: undefined,
+  });
+}
+
 /**
  * After a price response: removes line state for lines no longer on the list and Recipes the
  * server doesn't know. Returns the same Draft object when nothing changed.

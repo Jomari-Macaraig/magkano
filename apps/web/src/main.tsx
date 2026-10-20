@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import { DraftProvider } from "./DraftProvider";
 import { HomePage } from "./HomePage";
 import { Layout } from "./Layout";
+import { LinePage } from "./LinePage";
 import { ListPage } from "./ListPage";
 import { RecipePage } from "./RecipePage";
 import "./styles.css";
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       { path: "/", element: <HomePage /> },
       { path: "/recipes/:id", element: <RecipePage /> },
       { path: "/list", element: <ListPage /> },
+      { path: "/list/:lineKey", element: <LinePage /> },
     ],
   },
 ]);

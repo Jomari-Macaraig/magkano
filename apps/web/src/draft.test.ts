@@ -5,6 +5,7 @@ import {
   type Draft,
   emptyDraft,
   loadDraft,
+  pickMatch,
   pruneDraft,
   removeRecipe,
   saveDraft,
@@ -108,6 +109,17 @@ describe("Draft edits", () => {
 
     const cleared = setLineState(draft, "chicken", { haveIt: false });
     expect(cleared.lines).not.toHaveProperty("chicken");
+  });
+
+  it("picks a match and clears the line's Price Override in the same edit", () => {
+    const picked = pickMatch(draft, "untagged:patis", "DTI:PATIS:Datu Puti:350ml");
+    expect(picked.lines["untagged:patis"]).toEqual({
+      pickedCommodityKey: "DTI:PATIS:Datu Puti:350ml",
+    });
+    expect(pickMatch(draft, "chicken", "DA:CHICKEN:whole").lines.chicken).toEqual({
+      haveIt: true,
+      pickedCommodityKey: "DA:CHICKEN:whole",
+    });
   });
 });
 

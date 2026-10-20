@@ -36,4 +36,4 @@ Root scripts: `pnpm extract <pdf>`, `pnpm tag [--check]`, `pnpm seed`, `pnpm typ
 - [apps/api/src/pricing/CLAUDE.md](apps/api/src/pricing/CLAUDE.md): `POST /api/price`, the pure `priceDraft` function (matching, conversions, Purchase Units, line state), the cached Postgres Catalog
 - [apps/api/src/seed/CLAUDE.md](apps/api/src/seed/CLAUDE.md): `pnpm seed`, its checks (all problems listed, nothing written on failure), the one-transaction wipe and reload, Recipe chunk embeddings
 - [apps/api/src/search/CLAUDE.md](apps/api/src/search/CLAUDE.md): `GET /api/search`, chunk text, query expansion, scoring, the text fallback, the `embeddings.json` cache
-- [apps/web/CLAUDE.md](apps/web/CLAUDE.md): Vite + React SPA, Clerk header, React Router, typed API client and the `/api` dev proxy, home with search, Recipe page, the Draft (`localStorage`, debounced re-pricing) and the Grocery List screen
+- [apps/web/CLAUDE.md](apps/web/CLAUDE.md): Vite + React SPA, Clerk header, React Router, typed API client and the `/api` dev proxy, home with search, Recipe page, the Draft (`localStorage`, debounced re-pricing), the Grocery List screen and the line page (pick a match, Price Override)

@@ -4,6 +4,7 @@ import { Link } from "react-router";
 import { DraftRecipeRow } from "./DraftControls";
 import { useDraft } from "./DraftProvider";
 import { setLineState } from "./draft";
+import { linePath } from "./LinePage";
 import {
   coverage,
   filterLines,
@@ -149,7 +150,9 @@ function LineRow({ line }: { line: PricedLine }) {
         onChange={(e) => update((d) => setLineState(d, line.key, { haveIt: e.target.checked }))}
       />
       <div className="line-body">
-        <span className="line-name">{line.name}</span>
+        <Link to={linePath(line.key)} className="line-name">
+          {line.name}
+        </Link>
         <span className="small">
           {formatNeed(line.need)}
           {line.price.buy && <> → {formatBuy(line.price.buy)}</>}
@@ -169,6 +172,9 @@ function LineRow({ line }: { line: PricedLine }) {
         ) : (
           line.price.lineCentavos !== null && <span>{formatPeso(line.price.lineCentavos)}</span>
         )}
+        <Link to={linePath(line.key)} className="line-open" aria-label={`Open ${line.name}`}>
+          ›
+        </Link>
         {excluded && (
           <button
             type="button"
