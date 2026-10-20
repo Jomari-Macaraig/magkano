@@ -31,5 +31,5 @@ Root scripts: `pnpm extract <pdf>`, `pnpm tag [--check]`, `pnpm typecheck`, `pnp
 
 - [apps/api/CLAUDE.md](apps/api/CLAUDE.md): Hono app, `{ error, message }` error shape, zod validation, Drizzle schema (9 tables) and migrations, Hono RPC types
 - [apps/api/src/extract/CLAUDE.md](apps/api/src/extract/CLAUDE.md): `pnpm extract <pdf>`, DA/DTI PDF parsers, filters, Publication JSON files under `apps/api/data/publications/`
-- [apps/api/src/tagging/CLAUDE.md](apps/api/src/tagging/CLAUDE.md): `pnpm tag [--check]`, `tag-assignments.json` / `reference-tags.json`, the Tag vocabulary and Seeded Recipes data files, the stubbable OpenAI tagging client
+- [apps/api/src/tagging/CLAUDE.md](apps/api/src/tagging/CLAUDE.md): `pnpm tag`, the reviewed `tag-assignments.json`, the Tag vocabulary and Seeded Recipes data files, the stubbable OpenAI tagging client
 - [apps/web/CLAUDE.md](apps/web/CLAUDE.md): Vite + React SPA, Clerk header, React Router, typed API client and the `/api` dev proxy

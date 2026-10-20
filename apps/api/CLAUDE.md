@@ -11,7 +11,7 @@ The committed files under `data/` are the dataset; Postgres is a copy that `seed
 - `pnpm --filter @magkano/api dev`: `tsx watch` on `src/server.ts`, port `API_PORT` (default 8787), reading the root `.env`.
 - `pnpm db:generate` after editing `src/db/schema.ts`; `pnpm db:migrate` to apply. Both read `DATABASE_URL` from the root `.env`.
 - `pnpm --filter @magkano/api extract <pdf>`: writes `data/publications/<da|dti>-<date>.json`. See [src/extract/CLAUDE.md](src/extract/CLAUDE.md).
-- `pnpm --filter @magkano/api tag [--check]`: proposes Tag Assignments into `data/tag-assignments.json`, or checks them against `data/reference-tags.json`. See [src/tagging/CLAUDE.md](src/tagging/CLAUDE.md).
+- `pnpm --filter @magkano/api tag`: proposes Tag Assignments for new or renamed items into `data/tag-assignments.json` (committed, fully reviewed). `--check` was for the first review only. See [src/tagging/CLAUDE.md](src/tagging/CLAUDE.md).
 - Tests: `pnpm vitest run --project api`. Route tests call `createApp().request(...)`; extract tests read `sample/`; tagging tests stub the OpenAI client. None need a database or the network.
 
 ## Key files

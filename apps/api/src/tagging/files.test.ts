@@ -6,14 +6,14 @@ import { tags } from "../../data/tags";
 import {
   formatTagAssignments,
   loadPublicationFiles,
-  referenceTagsSchema,
+  tagAssignmentsSchema,
   taggingItems,
 } from "./files";
 
 const dataDir = new URL("../../data/", import.meta.url);
 const publications = loadPublicationFiles(fileURLToPath(new URL("publications/", dataDir)));
-const reference = referenceTagsSchema.parse(
-  JSON.parse(readFileSync(new URL("reference-tags.json", dataDir), "utf8")),
+const assignments = tagAssignmentsSchema.parse(
+  JSON.parse(readFileSync(new URL("tag-assignments.json", dataDir), "utf8")),
 );
 
 describe("taggingItems", () => {
@@ -40,18 +40,23 @@ describe("taggingItems", () => {
     });
   });
 
-  it("covers every Ingredient and Commodity, with exactly the reference keys", () => {
+  it("covers every Ingredient and Commodity, with exactly the Tag Assignment keys", () => {
     expect(items.filter((i) => i.key.startsWith("ingredient:"))).toHaveLength(177);
     expect(items.filter((i) => i.key.startsWith("commodity:"))).toHaveLength(277);
-    expect(items.map((i) => i.key).sort()).toEqual(Object.keys(reference).sort());
+    expect(items.map((i) => i.key).sort()).toEqual(Object.keys(assignments).sort());
   });
 });
 
-describe("reference-tags.json", () => {
+describe("tag-assignments.json", () => {
   it("uses only slugs from the vocabulary", () => {
     const slugs = new Set(tags.map((t) => t.slug));
-    const unknown = Object.values(reference).filter((r) => r.tag !== null && !slugs.has(r.tag));
+    const unknown = Object.values(assignments).filter((a) => a.tag !== null && !slugs.has(a.tag));
     expect(unknown).toEqual([]);
+  });
+
+  it("is fully reviewed", () => {
+    const open = Object.entries(assignments).filter(([, a]) => a.status !== "reviewed");
+    expect(open).toEqual([]);
   });
 });
 
