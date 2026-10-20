@@ -16,3 +16,7 @@ Covers:
 - Whether `magkano.online` on Vercel (apex plus `www` redirect) conflicts with Clerk's DNS records.
 
 Cite primary sources (Clerk docs, Vercel domain docs).
+
+## Comments
+
+Research findings: branch `research/clerk-production-domain`, file `.scratch/v1.1/research/03-clerk-production-on-magkano-online.md`.
