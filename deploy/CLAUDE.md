@@ -63,6 +63,7 @@ An interactive bash wizard that walks the project owner through the one-time acc
 - `deploy/setup.sh --list` prints the steps; `--help` prints usage.
 - `DNS_SERVER=1.1.1.1 deploy/setup.sh ...` sends the `dig` checks to that resolver.
 - It `cd`s to the repo root itself, so it runs from any directory.
+- Started from another shell (`zsh deploy/setup.sh`, `sh ...`), it re-runs itself under bash: zsh's 1-based arrays would shift every step title by one.
 
 ### Steps (the spec's order)
 

@@ -207,6 +207,10 @@ finish() {
 # public: an IP address shown by Vercel and a preview URL.
 # ──────────────────────────────────────────────────────────────────────────
 
+# Run under another shell (`zsh deploy/setup.sh`), zsh's 1-based arrays shift every step
+# title by one: re-run under bash before anything below reads an array.
+if [ -z "${BASH_VERSION:-}" ]; then exec bash "$0" "$@"; fi
+
 _no_secrets() {
   printf '  this wizard never captures secrets (%s is disabled)\n' "$1" >&2
   exit 70
