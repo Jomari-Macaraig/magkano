@@ -24,7 +24,7 @@
 
 Resolved. `pnpm extract <pdf>` writes `apps/api/data/publications/da-2026-10-08.json` (202 Commodities, 2 feed grade dropped) and `dti-2026-05-11.json` (75 Commodities, 92 dropped: 52 non-food, 34 water, 6 outside Luzon). Docs: `apps/api/src/extract/CLAUDE.md`.
 
-Open for the owner (no change made):
-- Bundle and head produce (eggplant, pechay, sitao, cabbage) get a Purchase Unit of 1 `piece`, meaning one bundle or head; pricing should read `piece` as "one count unit".
-- "3-4 Small Bundles" is read as bundles per kg (≈286 g each); the PDF doesn't say.
-- "Bangus, Large (1-2 pcs)" gets no piece weight because the PDF omits "/kg".
+Owner decisions on the open questions (2026-10-21), recorded in ticket 06; no extract change needed:
+- A Purchase Unit of `1 piece` on bundle and head produce means one bundle or head.
+- "3-4 Small Bundles" stays read as bundles per kg (about 286 g each).
+- "Bangus, Large (1-2 pcs)" keeps no piece weight and is bought by 250 g.
