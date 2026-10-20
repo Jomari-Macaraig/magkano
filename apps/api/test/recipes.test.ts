@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { createApp } from "../src/app";
+import type { CatalogStore } from "../src/pricing/catalog";
 import type { RecipeDetail, RecipeStore } from "../src/recipes";
 
 const adobo: RecipeDetail = {
@@ -26,8 +27,12 @@ const store: RecipeStore = {
   get: async (id) => (id === adobo.id ? adobo : null),
 };
 
+const noCatalog: CatalogStore = {
+  catalog: async () => ({ tags: [], recipes: [], commodities: [] }),
+};
+
 describe("Recipe routes", () => {
-  const app = createApp({ recipes: store });
+  const app = createApp({ recipes: store, catalog: noCatalog });
 
   it("GET /api/recipes answers the Recipe cards", async () => {
     const res = await app.request("/api/recipes");

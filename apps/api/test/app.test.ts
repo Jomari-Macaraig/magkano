@@ -1,10 +1,16 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { z } from "zod";
 import { createApp } from "../src/app";
+import type { CatalogStore } from "../src/pricing/catalog";
 import { validate } from "../src/validate";
 
 /** These tests read no data, so the store is empty. */
-const createTestApp = () => createApp({ recipes: { list: async () => [], get: async () => null } });
+const createTestApp = () =>
+  createApp({ recipes: { list: async () => [], get: async () => null }, catalog: noCatalog });
+
+const noCatalog: CatalogStore = {
+  catalog: async () => ({ tags: [], recipes: [], commodities: [] }),
+};
 
 describe("API skeleton", () => {
   const app = createTestApp();

@@ -2,11 +2,14 @@ import { Hono } from "hono";
 import { HTTPException } from "hono/http-exception";
 import { z } from "zod";
 import { errorResponse } from "./errors";
+import type { CatalogStore } from "./pricing/catalog";
+import { priceDraft } from "./pricing/price";
+import { priceRequestSchema } from "./pricing/request";
 import type { RecipeStore } from "./recipes";
 import { validate } from "./validate";
 
 /** What the routes read from. */
-export type AppDeps = { recipes: RecipeStore };
+export type AppDeps = { recipes: RecipeStore; catalog: CatalogStore };
 
 /** Builds the API. Every route lives under `/api`. */
 export function createApp(deps: AppDeps) {
@@ -33,7 +36,10 @@ export function createApp(deps: AppDeps) {
       const recipe = await deps.recipes.get(id);
       if (!recipe) return errorResponse(c, 404, "not_found", `No Recipe "${id}"`);
       return c.json(recipe, 200);
-    });
+    })
+    .post("/price", validate("json", priceRequestSchema), async (c) =>
+      c.json(priceDraft(await deps.catalog.catalog(), c.req.valid("json")), 200),
+    );
 }
 
 export type AppType = ReturnType<typeof createApp>;

@@ -13,16 +13,16 @@ The committed files under `data/` are the dataset; Postgres is a copy that `seed
 - `pnpm --filter @magkano/api extract <pdf>`: writes `data/publications/<da|dti>-<date>.json`. See [src/extract/CLAUDE.md](src/extract/CLAUDE.md).
 - `pnpm --filter @magkano/api seed`: checks every data file, then wipes and reloads the database. See [src/seed/CLAUDE.md](src/seed/CLAUDE.md).
 - `pnpm --filter @magkano/api tag`: proposes Tag Assignments for new or renamed items into `data/tag-assignments.json` (committed, fully reviewed). `--check` was for the first review only. See [src/tagging/CLAUDE.md](src/tagging/CLAUDE.md).
-- Tests: `pnpm vitest run --project api`. Route tests call `createApp({ recipes: stub }).request(...)`; extract tests read `sample/`; tagging tests stub the OpenAI client; seed tests use a spy writer. None need a database or the network.
+- Tests: `pnpm vitest run --project api`. Route tests call `createApp({ recipes: stub, catalog: stub }).request(...)`; extract tests read `sample/`; tagging tests stub the OpenAI client; seed tests use a spy writer. None need a database or the network.
 
 ## Key files
 
-- `src/app.ts`: `createApp({ recipes })` builds the Hono app under `/api`. Routes are **chained** so `AppType` carries them all for Hono RPC; add new routes the same way (`.route(...)` / `.get(...)`).
-- Routes so far: `GET /api/health`; `GET /api/recipes` (cards `{ id, name, description, servings }`, sorted by name); `GET /api/recipes/:id` (the card plus `ingredients: { name, quantity, unit, prepNote, optional }[]` in order, no prices; 404 `not_found` if unknown).
+- `src/app.ts`: `createApp({ recipes, catalog })` builds the Hono app under `/api`. Routes are **chained** so `AppType` carries them all for Hono RPC; add new routes the same way (`.route(...)` / `.get(...)`).
+- Routes so far: `GET /api/health`; `GET /api/recipes` (cards `{ id, name, description, servings }`, sorted by name); `GET /api/recipes/:id` (the card plus `ingredients: { name, quantity, unit, prepNote, optional }[]` in order, no prices; 404 `not_found` if unknown); `POST /api/price` (prices a Draft; see [src/pricing/CLAUDE.md](src/pricing/CLAUDE.md)).
 - `src/recipes.ts`: the `RecipeStore` interface routes read through, and `createRecipeStore(db)`, its Drizzle implementation.
 - `src/errors.ts`: every error is `{ error, message }`. Codes: 400 `invalid_input`, 404 `not_found` (also unknown routes), 500 `internal` (any thrown error; logged, message hidden). Hono's own 4xx errors, such as a malformed JSON body, also map to 400 `invalid_input`.
 - `src/validate.ts`: `validate(target, zodSchema)` middleware. Use it on every input; a failure answers 400 `invalid_input` with `path: message` pairs.
-- `src/index.ts`: type-only exports for the web app (`AppType`, `ErrorBody`).
+- `src/index.ts`: type-only exports for the web app (`AppType`, `ErrorBody`, and the price request/response types such as `PriceRequest`, `PriceResponse`, `PricedLine`).
 - `src/server.ts`: local Node server; builds the Postgres-backed stores and refuses to start without `DATABASE_URL`.
 - `src/db/schema.ts`: the 9 tables. Recipe ids are text (the seed key); other ids are integer identity, and nothing on the device may store them. `recipe_chunks.embedding` is `vector(1536)` with an HNSW cosine index.
 - `src/db/client.ts`: `createDb(url)` returns a Drizzle client with `close()`.

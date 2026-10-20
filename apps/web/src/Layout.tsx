@@ -1,8 +1,10 @@
 import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/react";
-import { Link, Outlet } from "react-router";
+import { Link, Outlet, useLocation } from "react-router";
+import { ViewListButton } from "./DraftControls";
 
 /** Every screen: the header, then the page. Accounts are optional; nothing is gated. */
 export function Layout() {
+  const onList = useLocation().pathname.startsWith("/list");
   return (
     <>
       <header className="header">
@@ -30,6 +32,7 @@ export function Layout() {
       <main className="page">
         <Outlet />
       </main>
+      {!onList && <ViewListButton />}
     </>
   );
 }
