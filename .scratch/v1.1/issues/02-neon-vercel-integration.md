@@ -17,3 +17,7 @@ Covers:
 - Region `aws-ap-southeast-1` alongside Vercel `sin1`.
 
 Cite primary sources (Neon docs, Vercel integration docs).
+
+## Comments
+
+Research findings: branch `research/neon-vercel-integration`, file `.scratch/v1.1/research/02-neon-vercel-integration.md`.
