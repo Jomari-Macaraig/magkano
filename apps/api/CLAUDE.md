@@ -1,6 +1,6 @@
 # apps/api
 
-Hono + TypeScript API. Holds the Drizzle schema and migrations, the domain logic, and (in later tickets) the `extract`, `tag` and `seed` scripts and `data/`.
+Hono + TypeScript API. Holds the Drizzle schema and migrations, the domain logic, the scripts under `scripts/` (`extract` now; `tag` and `seed` later) and `data/`.
 
 ## Data flow
 
@@ -10,7 +10,8 @@ The committed files under `data/` are the dataset; Postgres is a copy that `seed
 
 - `pnpm --filter @magkano/api dev`: `tsx watch` on `src/server.ts`, port `API_PORT` (default 8787), reading the root `.env`.
 - `pnpm db:generate` after editing `src/db/schema.ts`; `pnpm db:migrate` to apply. Both read `DATABASE_URL` from the root `.env`.
-- Tests: `pnpm vitest run --project api`. They call `createApp().request(...)` and need no database.
+- `pnpm --filter @magkano/api extract <pdf>`: writes `data/publications/<da|dti>-<date>.json`. See [src/extract/CLAUDE.md](src/extract/CLAUDE.md).
+- Tests: `pnpm vitest run --project api`. Route tests call `createApp().request(...)`; extract tests read `sample/`. None need a database.
 
 ## Key files
 
