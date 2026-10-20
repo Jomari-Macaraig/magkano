@@ -12,6 +12,7 @@ A v1.1 spec at `.scratch/v1.1/spec.md` that `/to-tickets` can take with nothing 
 - **Build budget**: about 1 hour of agent build time from the spec, without lowering quality. The owner's account setup (Vercel, Neon, Clerk production, DNS, env vars, OpenAI spend limit) is a separate `wizard` ticket and doesn't count toward that hour.
 - **Vocabulary**: use the terms in `GLOSSARY.md`. Call `domain-modeling` when a ticket sharpens or adds a term.
 - **Plan, don't build**: tickets produce decisions, not code.
+- **Stay portable**: Magkano may later move to AWS or GCP. Keep Vercel-specific code to the thin `api/index.ts` entry and `vercel.json`. The app, its `buildApp(env)` wiring, the DB client and the `migrate` → `seed` pipeline stay host-neutral. See [ADR 0001](../../docs/adr/0001-every-deploy-reseeds-from-committed-files.md).
 - **Research findings** go on throwaway `research/<name>` branches (pushed, never merged), linked from the ticket.
 
 ### Settled before charting
@@ -43,6 +44,7 @@ Nothing. Local dev is unchanged (settled in the deployment shape ticket); only t
 
 ## Out of scope
 
+- Moving to AWS or GCP (a later effort; v1.1 only keeps that move cheap).
 - GitHub Actions or any CI outside the Vercel build.
 - Rate limits, monitoring, error tracking (Sentry), analytics and uptime checks.
 - v2–v5 (saved Grocery Lists, user Recipes, ongoing ingestion, "what I have"), as listed in the v1 map.
