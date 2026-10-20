@@ -30,7 +30,7 @@ Root scripts: `pnpm extract <pdf>`, `pnpm tag [--check]`, `pnpm seed`, `pnpm typ
 
 ## Subsystem Documentation
 
-- [apps/api/CLAUDE.md](apps/api/CLAUDE.md): Hono app, `.ts` relative imports, `{ error, message }` error shape, zod validation, Drizzle schema (9 tables) and migrations, Hono RPC types, the Recipe routes
+- [apps/api/CLAUDE.md](apps/api/CLAUDE.md): Hono app, `buildApp(env)` shared wiring, `.ts` relative imports, the migrate/seed database URLs and add-only migrations, `{ error, message }` error shape, zod validation, Drizzle schema (9 tables) and migrations, Hono RPC types, the Recipe routes
 - [apps/api/src/extract/CLAUDE.md](apps/api/src/extract/CLAUDE.md): `pnpm extract <pdf>`, DA/DTI PDF parsers, filters, Publication JSON files under `apps/api/data/publications/`
 - [apps/api/src/tagging/CLAUDE.md](apps/api/src/tagging/CLAUDE.md): `pnpm tag`, the reviewed `tag-assignments.json`, the Tag vocabulary and Seeded Recipes data files, the stubbable OpenAI tagging client
 - [apps/api/src/pricing/CLAUDE.md](apps/api/src/pricing/CLAUDE.md): `POST /api/price`, the pure `priceDraft` function (matching, conversions, Purchase Units, line state), the cached Postgres Catalog

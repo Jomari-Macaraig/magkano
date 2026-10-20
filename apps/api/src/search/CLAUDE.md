@@ -27,7 +27,7 @@ Semantic Recipe search behind `GET /api/search?q=`, plus the Recipe chunk vector
 - `embeddings.ts`: `embedRecipeChunks`, `chunkHash`, `formatEmbeddingCache` (sorted by hash, one entry per line), `parseEmbeddingCache` (zod; every vector must be 1536 long).
 - `openai.ts`: `createOpenAiEmbedder(apiKey, { timeoutMs, maxRetries })` for `text-embedding-3-large` at `dimensions: 1536`. The SDK is built on the first call, so a fully cached seed needs no key. The server uses a 3 s timeout with no retries; seed uses 120 s with 2 retries.
 - `store.ts`: `createPgSearchSource(db)`, which supplies `loadIndex` and `similarities` from Postgres.
-- Wiring: `src/server.ts` builds the search (no embedder without `OPENAI_API_KEY`); `scripts/seed.ts` reads and writes `data/embeddings.json`.
+- Wiring: `buildApp` (`src/build-app.ts`) builds the search (no embedder without `OPENAI_API_KEY`); `scripts/seed.ts` reads and writes `data/embeddings.json`.
 
 ## Tests
 
