@@ -37,10 +37,11 @@ A v1.1 spec at `.scratch/v1.1/spec.md` that `/to-tickets` can take with nothing 
 - [Research the Neon–Vercel integration and connecting from Functions and the build](issues/02-neon-vercel-integration.md): Neon-Managed integration (the 10-branch Free cap rules out Vercel-Managed); pooled `DATABASE_URL` for the Function, `DATABASE_URL_UNPOOLED` for migrate and seed; keep postgres.js; `regions: ["sin1"]`.
 - [Research Clerk production on magkano.online with dev keys on previews](issues/03-clerk-production-on-magkano-online.md): production needs `magkano.online` plus Clerk's CNAMEs; previews use the dev instance; only the publishable key, per Vercel environment; production social sign-in needs the owner's own OAuth apps.
 - [Decide the deployment shape for this codebase](issues/04-deployment-shape.md): root `api/index.ts` + `.ts` import extensions; shared `buildApp(env)`; postgres.js with a small pool; production DB vars in Production only; Neon Free, Vercel Hobby, Node 22.x; email-only Clerk; bare `magkano.online` with DNS at GoDaddy; unconfirmed facts become acceptance checks; the 9-step wizard order.
+- [Write the v1.1 spec](issues/05-write-v1.1-spec.md): [spec.md](spec.md) is ready for `/to-tickets`. The build embeds missing chunks and warns; deploy files live in `deploy/`; `vite build` fails without the Clerk key.
 
 ## Not yet specified
 
-Nothing. Local dev is unchanged (settled in the deployment shape ticket); only the spec remains.
+Nothing. The destination is reached: the spec is written, and next comes `/to-tickets`.
 
 ## Out of scope
 
