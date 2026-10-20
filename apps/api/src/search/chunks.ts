@@ -1,5 +1,5 @@
 // What gets embedded for search: two chunks per Recipe, and the query (spec: Search).
-import type { ChunkKind } from "../db/schema";
+import type { ChunkKind } from "../db/schema.ts";
 
 /** A Tag as search needs it. `aliases` holds the display name first, then the other names. */
 export type SearchTag = { slug: string; parent: string | null; aliases: string[] };

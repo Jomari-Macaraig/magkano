@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { tags } from "../../data/tags";
-import type { TaggingClient, TaggingRequest } from "./openai";
-import { runTag, type TaggingItem } from "./tag";
+import { tags } from "../../data/tags.ts";
+import type { TaggingClient, TaggingRequest } from "./openai.ts";
+import { runTag, type TaggingItem } from "./tag.ts";
 
 const tagSlugs = tags.map((t) => t.slug);
 

@@ -1,8 +1,8 @@
 import { z } from "zod";
-import { type BaseUnit, baseUnits, type Unit, units } from "../db/schema";
-import { type PublicationFile, publicationFileSchema } from "../extract/extract";
-import { commodityAssignmentKey, ingredientKey, tagAssignmentsSchema } from "../tagging/files";
-import type { TagAssignments } from "../tagging/tag";
+import { type BaseUnit, baseUnits, type Unit, units } from "../db/schema.ts";
+import { type PublicationFile, publicationFileSchema } from "../extract/extract.ts";
+import { commodityAssignmentKey, ingredientKey, tagAssignmentsSchema } from "../tagging/files.ts";
+import type { TagAssignments } from "../tagging/tag.ts";
 
 /** The raw dataset: hand-edited TypeScript and script-written JSON, all checked before use. */
 export type SeedInput = {

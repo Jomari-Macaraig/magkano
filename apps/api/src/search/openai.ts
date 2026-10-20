@@ -1,5 +1,5 @@
 import OpenAI from "openai";
-import { EMBEDDING_DIMENSIONS, type Embedder } from "./embeddings";
+import { EMBEDDING_DIMENSIONS, type Embedder } from "./embeddings.ts";
 
 export const EMBEDDING_MODEL = "text-embedding-3-large";
 

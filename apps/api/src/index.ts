@@ -1,6 +1,6 @@
 // Types the web app imports through Hono RPC. Type-only: the SPA never bundles server code.
-export type { AppType } from "./app";
-export type { ErrorBody, ErrorCode } from "./errors";
+export type { AppType } from "./app.ts";
+export type { ErrorBody, ErrorCode } from "./errors.ts";
 export type {
   Amount,
   Buy,
@@ -10,4 +10,4 @@ export type {
   PricedMatch,
   PriceRequest,
   PriceResponse,
-} from "./pricing/price";
+} from "./pricing/price.ts";

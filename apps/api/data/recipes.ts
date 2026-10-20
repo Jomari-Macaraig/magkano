@@ -1,5 +1,5 @@
 // biome-ignore-all format: one Ingredient per line keeps the Recipes easy to review.
-import type { Unit } from "../src/db/schema";
+import type { Unit } from "../src/db/schema.ts";
 
 /** [display name, quantity (null = "to taste"), unit (null with a null quantity), extras]. */
 export type IngredientSeed = [

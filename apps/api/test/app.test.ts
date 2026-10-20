@@ -1,8 +1,8 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { z } from "zod";
-import { createApp } from "../src/app";
-import { validate } from "../src/validate";
-import { noCatalog, noRecipes, noSearch } from "./stubs";
+import { createApp } from "../src/app.ts";
+import { validate } from "../src/validate.ts";
+import { noCatalog, noRecipes, noSearch } from "./stubs.ts";
 
 /** These tests read no data, so the store is empty. */
 const createTestApp = () =>

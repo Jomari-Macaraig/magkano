@@ -1,8 +1,8 @@
 // Recipe chunk vectors for `seed`, cached in the committed `data/embeddings.json`.
 import { createHash } from "node:crypto";
 import { z } from "zod";
-import type { ChunkKind } from "../db/schema";
-import { type ChunkSource, recipeChunkTexts, type SearchTag } from "./chunks";
+import type { ChunkKind } from "../db/schema.ts";
+import { type ChunkSource, recipeChunkTexts, type SearchTag } from "./chunks.ts";
 
 /** Size of every stored vector (`recipe_chunks.embedding` is `vector(1536)`). */
 export const EMBEDDING_DIMENSIONS = 1536;

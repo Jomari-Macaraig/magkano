@@ -1,7 +1,7 @@
 import { zValidator } from "@hono/zod-validator";
 import type { ValidationTargets } from "hono";
 import type { ZodType } from "zod";
-import { errorResponse } from "./errors";
+import { errorResponse } from "./errors.ts";
 
 /** zod validation for any request part; a failure answers 400 `invalid_input`. */
 export function validate<T extends ZodType, Target extends keyof ValidationTargets>(

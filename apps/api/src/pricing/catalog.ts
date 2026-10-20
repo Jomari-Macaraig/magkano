@@ -1,5 +1,5 @@
-import type { BaseUnit, CountUnit, MeasureUnit, Source, Unit } from "../db/schema";
-import type { SeedPlan } from "../seed/seed";
+import type { BaseUnit, CountUnit, MeasureUnit, Source, Unit } from "../db/schema.ts";
+import type { SeedPlan } from "../seed/seed.ts";
 
 /** Everything pricing reads, keyed by Tag slugs, Recipe ids and Commodity keys. */
 export type Catalog = {

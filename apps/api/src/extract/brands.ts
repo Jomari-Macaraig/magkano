@@ -1,4 +1,4 @@
-import type { Source } from "../db/schema";
+import type { Source } from "../db/schema.ts";
 
 /**
  * Brands printed in each source's sample Publication. A Commodity's brand is the longest of its

@@ -1,13 +1,13 @@
 import { createHash } from "node:crypto";
 import { z } from "zod";
-import { countUnits, measureUnits, type Source, sources } from "../db/schema";
-import { brandOf } from "./brands";
-import { type CommodityTerms, daCommodityTerms, daDropReason } from "./da-commodity";
-import { isDaPublication, readDaPublication } from "./da-parser";
-import { dtiCommodityTerms, dtiDropReason } from "./dti-commodity";
-import { isDtiPublication, readDtiPublication } from "./dti-parser";
-import { ExtractError } from "./extract-error";
-import { type PdfItem, readPdfItems } from "./pdf-text";
+import { countUnits, measureUnits, type Source, sources } from "../db/schema.ts";
+import { brandOf } from "./brands.ts";
+import { type CommodityTerms, daCommodityTerms, daDropReason } from "./da-commodity.ts";
+import { isDaPublication, readDaPublication } from "./da-parser.ts";
+import { dtiCommodityTerms, dtiDropReason } from "./dti-commodity.ts";
+import { isDtiPublication, readDtiPublication } from "./dti-parser.ts";
+import { ExtractError } from "./extract-error.ts";
+import { type PdfItem, readPdfItems } from "./pdf-text.ts";
 
 const amountSchema = z.object({ amount: z.number().positive(), unit: z.enum(measureUnits) });
 

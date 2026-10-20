@@ -1,5 +1,5 @@
 import { getDocument } from "pdfjs-dist/legacy/build/pdf.mjs";
-import { ExtractError } from "./extract-error";
+import { ExtractError } from "./extract-error.ts";
 
 /** One positioned piece of text. `y` is measured from the top of the page. */
 export type PdfItem = {

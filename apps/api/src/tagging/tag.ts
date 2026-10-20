@@ -1,4 +1,4 @@
-import type { TaggingAnswer, TaggingClient } from "./openai";
+import type { TaggingAnswer, TaggingClient } from "./openai.ts";
 
 /** One Ingredient or Commodity to tag, keyed as in `tag-assignments.json`. */
 export type TaggingItem = { key: string; text: string; context: string };

@@ -2,8 +2,8 @@ import { mkdtempSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { publicationFileSchema } from "./extract";
-import { writePublicationFile } from "./write";
+import { publicationFileSchema } from "./extract.ts";
+import { writePublicationFile } from "./write.ts";
 
 const samplePath = (name: string) =>
   new URL(`../../../../sample/${name}`, import.meta.url).pathname;

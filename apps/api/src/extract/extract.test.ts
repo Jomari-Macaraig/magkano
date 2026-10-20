@@ -6,8 +6,8 @@ import {
   extractPublication,
   formatPublicationFile,
   type PublicationFile,
-} from "./extract";
-import { type PdfItem, readPdfItems } from "./pdf-text";
+} from "./extract.ts";
+import { type PdfItem, readPdfItems } from "./pdf-text.ts";
 
 const sample = (name: string) =>
   new Uint8Array(readFileSync(new URL(`../../../../sample/${name}`, import.meta.url)));

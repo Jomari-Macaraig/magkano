@@ -1,8 +1,8 @@
 import { asc, sql } from "drizzle-orm";
-import type { Db } from "../db/client";
-import { ingredients, recipeChunks, recipes, tagAliases, tags } from "../db/schema";
-import type { ChunkSimilarity } from "./rank";
-import type { RecipeSearchDeps, SearchIndex } from "./search";
+import type { Db } from "../db/client.ts";
+import { ingredients, recipeChunks, recipes, tagAliases, tags } from "../db/schema.ts";
+import type { ChunkSimilarity } from "./rank.ts";
+import type { RecipeSearchDeps, SearchIndex } from "./search.ts";
 
 /** The Postgres half of search: the index (vocabulary + Recipes) and chunk similarities. */
 export function createPgSearchSource(db: Db): Pick<RecipeSearchDeps, "loadIndex" | "similarities"> {

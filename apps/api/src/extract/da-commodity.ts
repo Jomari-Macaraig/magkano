@@ -1,5 +1,5 @@
-import type { CountUnit, MeasureUnit } from "../db/schema";
-import { ExtractError } from "./extract-error";
+import type { CountUnit, MeasureUnit } from "../db/schema.ts";
+import { ExtractError } from "./extract-error.ts";
 
 export type Amount = { amount: number; unit: MeasureUnit };
 

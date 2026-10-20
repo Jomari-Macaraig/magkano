@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { runCheck } from "./check";
-import type { TagAssignments } from "./tag";
+import { runCheck } from "./check.ts";
+import type { TagAssignments } from "./tag.ts";
 
 const proposed = (tag: string | null, proposedNewTag: string | null = null) => ({
   tag,

@@ -1,17 +1,17 @@
 // Usage: pnpm seed    check every data file, embed new Recipe chunks, then wipe and reload the database
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
-import { createDb } from "../src/db/client";
+import { createDb } from "../src/db/client.ts";
 import {
   type EmbeddingCache,
   embedRecipeChunks,
   formatEmbeddingCache,
   parseEmbeddingCache,
-} from "../src/search/embeddings";
-import { createOpenAiEmbedder } from "../src/search/openai";
-import { readSeedInput } from "../src/seed/input";
-import { runSeed } from "../src/seed/seed";
-import { writeSeedPlan } from "../src/seed/write";
+} from "../src/search/embeddings.ts";
+import { createOpenAiEmbedder } from "../src/search/openai.ts";
+import { readSeedInput } from "../src/seed/input.ts";
+import { runSeed } from "../src/seed/seed.ts";
+import { writeSeedPlan } from "../src/seed/write.ts";
 
 const databaseUrl = process.env.DATABASE_URL;
 if (!databaseUrl) {

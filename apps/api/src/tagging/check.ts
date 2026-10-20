@@ -1,4 +1,4 @@
-import type { TagAssignments } from "./tag";
+import type { TagAssignments } from "./tag.ts";
 
 /** The reviewed Tags `tag --check` compares against, keyed like `tag-assignments.json`. */
 export type ReferenceTags = Record<string, { tag: string | null }>;
