@@ -1,5 +1,5 @@
 import { sql } from "drizzle-orm";
-import type { Db } from "../db/client";
+import type { Db } from "../db/client.ts";
 import {
   commodities,
   ingredients,
@@ -10,9 +10,9 @@ import {
   tagAliases,
   tags,
   unitConversions,
-} from "../db/schema";
-import type { RecipeChunk } from "../search/embeddings";
-import type { SeedPlan } from "./seed";
+} from "../db/schema.ts";
+import type { RecipeChunk } from "../search/embeddings.ts";
+import type { SeedPlan } from "./seed.ts";
 
 /**
  * Wipes every table and loads `plan` and the Recipes' embedded search chunks, all in one

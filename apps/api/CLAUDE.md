@@ -6,6 +6,10 @@ Hono + TypeScript API. Holds the Drizzle schema and migrations, the domain logic
 
 The committed files under `data/` are the dataset; Postgres is a copy that `seed` wipes and rebuilds. Routes only read from Postgres. The web app reaches routes through Hono RPC types (`AppType`), never by importing server code.
 
+## Imports
+
+Every relative import in this workspace ends in `.ts` (`import { createApp } from "./app.ts"`). On Vercel the classic Node builder compiles each file separately and doesn't bundle, so an extensionless import fails at runtime. Biome's `useImportExtensions` enforces this (an error here, off in `apps/web`, which Vite bundles), and `pnpm format` adds a missing extension.
+
 ## Run
 
 - `pnpm --filter @magkano/api dev`: `tsx watch` on `src/server.ts`, port `API_PORT` (default 8787), reading the root `.env`.

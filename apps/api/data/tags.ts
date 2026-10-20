@@ -1,5 +1,5 @@
 // biome-ignore-all format: one Tag per line keeps the vocabulary easy to review.
-import type { Unit } from "../src/db/schema";
+import type { Unit } from "../src/db/schema.ts";
 
 /**
  * One Tag in the reviewed vocabulary. `g` and `ml` are its Unit Conversions: how many grams

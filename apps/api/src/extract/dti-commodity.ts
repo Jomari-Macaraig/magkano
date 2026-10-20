@@ -1,6 +1,6 @@
-import type { Amount, CommodityTerms } from "./da-commodity";
-import type { DtiCategory } from "./dti-parser";
-import { ExtractError } from "./extract-error";
+import type { Amount, CommodityTerms } from "./da-commodity.ts";
+import type { DtiCategory } from "./dti-parser.ts";
+import { ExtractError } from "./extract-error.ts";
 
 /** Leaves sold as food for people; every other DTI leaf is dropped. */
 const foodCategories = new Set<string>([

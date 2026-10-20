@@ -1,13 +1,13 @@
 import { Hono } from "hono";
 import { HTTPException } from "hono/http-exception";
 import { z } from "zod";
-import { errorResponse } from "./errors";
-import type { CatalogStore } from "./pricing/catalog";
-import { priceDraft } from "./pricing/price";
-import { priceRequestSchema } from "./pricing/request";
-import type { RecipeStore } from "./recipes";
-import type { RecipeSearch } from "./search/search";
-import { validate } from "./validate";
+import { errorResponse } from "./errors.ts";
+import type { CatalogStore } from "./pricing/catalog.ts";
+import { priceDraft } from "./pricing/price.ts";
+import { priceRequestSchema } from "./pricing/request.ts";
+import type { RecipeStore } from "./recipes.ts";
+import type { RecipeSearch } from "./search/search.ts";
+import { validate } from "./validate.ts";
 
 /** What the routes read from. */
 export type AppDeps = { recipes: RecipeStore; catalog: CatalogStore; search: RecipeSearch };

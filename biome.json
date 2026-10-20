@@ -11,6 +11,14 @@
     ]
   },
   "formatter": { "indentStyle": "space", "indentWidth": 2, "lineWidth": 100 },
-  "linter": { "rules": { "preset": "recommended" } },
+  "linter": {
+    "rules": { "preset": "recommended", "correctness": { "useImportExtensions": "error" } }
+  },
+  "overrides": [
+    {
+      "includes": ["apps/web/**"],
+      "linter": { "rules": { "correctness": { "useImportExtensions": "off" } } }
+    }
+  ],
   "javascript": { "formatter": { "quoteStyle": "double", "semicolons": "always" } }
 }

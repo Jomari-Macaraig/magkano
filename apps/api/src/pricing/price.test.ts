@@ -1,9 +1,9 @@
 import { join } from "node:path";
 import { beforeAll, describe, expect, it } from "vitest";
-import { readSeedInput } from "../seed/input";
-import { runSeed, type SeedPlan } from "../seed/seed";
-import { type Catalog, type CatalogCommodity, catalogFromSeedPlan } from "./catalog";
-import { type PriceRequest, priceDraft } from "./price";
+import { readSeedInput } from "../seed/input.ts";
+import { runSeed, type SeedPlan } from "../seed/seed.ts";
+import { type Catalog, type CatalogCommodity, catalogFromSeedPlan } from "./catalog.ts";
+import { type PriceRequest, priceDraft } from "./price.ts";
 
 let catalog: Catalog;
 

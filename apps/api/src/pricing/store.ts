@@ -1,5 +1,5 @@
 import { asc, desc, eq } from "drizzle-orm";
-import type { Db } from "../db/client";
+import type { Db } from "../db/client.ts";
 import {
   commodities,
   ingredients,
@@ -8,8 +8,8 @@ import {
   recipes,
   tags,
   unitConversions,
-} from "../db/schema";
-import type { Catalog, CatalogStore } from "./catalog";
+} from "../db/schema.ts";
+import type { Catalog, CatalogStore } from "./catalog.ts";
 
 /** How long the API keeps a loaded Catalog; a re-seed shows up after this. */
 const TTL_MS = 60_000;

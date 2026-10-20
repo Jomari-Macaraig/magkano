@@ -1,5 +1,5 @@
 import { z } from "zod";
-import type { PriceRequest } from "./price";
+import type { PriceRequest } from "./price.ts";
 
 export const MAX_RECIPES = 20;
 export const MAX_LINE_STATES = 200;

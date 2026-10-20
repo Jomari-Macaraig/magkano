@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { type ChunkSimilarity, rankBySimilarity } from "./rank";
+import { type ChunkSimilarity, rankBySimilarity } from "./rank.ts";
 
 const card = (name: string) => ({
   id: name.toLowerCase().replace(/ /g, "-"),

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { daDropReason, parseCountWeight } from "./da-commodity";
-import { dtiCommodityTerms, dtiDropReason } from "./dti-commodity";
+import { daDropReason, parseCountWeight } from "./da-commodity.ts";
+import { dtiCommodityTerms, dtiDropReason } from "./dti-commodity.ts";
 
 describe("parseCountWeight", () => {
   it.each([

@@ -1,12 +1,12 @@
 import { describe, expect, it, vi } from "vitest";
-import { realSeedPlan } from "../../test/seed-plan";
+import { realSeedPlan } from "../../test/seed-plan.ts";
 import {
   chunkHash,
   type EmbeddingCache,
   embedRecipeChunks,
   formatEmbeddingCache,
   parseEmbeddingCache,
-} from "./embeddings";
+} from "./embeddings.ts";
 
 const plan = await realSeedPlan();
 

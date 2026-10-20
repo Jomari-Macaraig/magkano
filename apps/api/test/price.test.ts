@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { createApp } from "../src/app";
-import type { Catalog } from "../src/pricing/catalog";
-import { noRecipes, noSearch } from "./stubs";
+import { createApp } from "../src/app.ts";
+import type { Catalog } from "../src/pricing/catalog.ts";
+import { noRecipes, noSearch } from "./stubs.ts";
 
 /** A one-Recipe Catalog: enough to see the route answer; pricing itself is tested in src/pricing. */
 const catalog: Catalog = {

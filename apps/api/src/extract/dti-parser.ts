@@ -1,5 +1,5 @@
-import { ExtractError } from "./extract-error";
-import { closestAnchor, isoDate, joinFragments, type PdfItem, parsePriceText } from "./pdf-text";
+import { ExtractError } from "./extract-error.ts";
+import { closestAnchor, isoDate, joinFragments, type PdfItem, parsePriceText } from "./pdf-text.ts";
 
 /**
  * DTI's 26 leaf categories, as printed, each with its parent from the hand-written map

@@ -2,18 +2,18 @@
 //        pnpm tag --check    accept proposals that agree with reference-tags.json (first review only; that file is now deleted)
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
-import { recipes } from "../data/recipes";
-import { tags } from "../data/tags";
-import { type AgreementRate, runCheck } from "../src/tagging/check";
+import { recipes } from "../data/recipes.ts";
+import { tags } from "../data/tags.ts";
+import { type AgreementRate, runCheck } from "../src/tagging/check.ts";
 import {
   formatTagAssignments,
   loadPublicationFiles,
   referenceTagsSchema,
   tagAssignmentsSchema,
   taggingItems,
-} from "../src/tagging/files";
-import { createOpenAiTaggingClient } from "../src/tagging/openai";
-import { runTag, type TagAssignments } from "../src/tagging/tag";
+} from "../src/tagging/files.ts";
+import { createOpenAiTaggingClient } from "../src/tagging/openai.ts";
+import { runTag, type TagAssignments } from "../src/tagging/tag.ts";
 
 const dataPath = (name: string) => fileURLToPath(new URL(`../data/${name}`, import.meta.url));
 const assignmentsPath = dataPath("tag-assignments.json");

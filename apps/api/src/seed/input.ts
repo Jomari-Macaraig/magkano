@@ -1,8 +1,8 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { recipes } from "../../data/recipes";
-import { tags } from "../../data/tags";
-import type { SeedInput } from "./seed";
+import { recipes } from "../../data/recipes.ts";
+import { tags } from "../../data/tags.ts";
+import type { SeedInput } from "./seed.ts";
 
 const readJson = (path: string): unknown => JSON.parse(readFileSync(path, "utf8"));
 

@@ -1,4 +1,4 @@
-import type { RecipeCard } from "../recipes";
+import type { RecipeCard } from "../recipes.ts";
 import {
   type ChunkSource,
   expandQuery,
@@ -6,8 +6,8 @@ import {
   type SearchTag,
   tagChain,
   toWords,
-} from "./chunks";
-import { type ChunkSimilarity, MAX_RESULTS, rankBySimilarity } from "./rank";
+} from "./chunks.ts";
+import { type ChunkSimilarity, MAX_RESULTS, rankBySimilarity } from "./rank.ts";
 
 /** Everything search reads besides the chunk vectors: the vocabulary and every Recipe. */
 export type SearchIndex = {

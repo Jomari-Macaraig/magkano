@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { createApp } from "../src/app";
-import type { RecipeDetail, RecipeStore } from "../src/recipes";
-import { noCatalog, noSearch } from "./stubs";
+import { createApp } from "../src/app.ts";
+import type { RecipeDetail, RecipeStore } from "../src/recipes.ts";
+import { noCatalog, noSearch } from "./stubs.ts";
 
 const adobo: RecipeDetail = {
   id: "chicken-adobo",

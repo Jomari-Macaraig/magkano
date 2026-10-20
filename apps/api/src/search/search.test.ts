@@ -1,8 +1,8 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { realSeedPlan } from "../../test/seed-plan";
-import { expandQuery } from "./chunks";
-import type { ChunkSimilarity } from "./rank";
-import { createRecipeSearch, type SearchIndex, textSearch } from "./search";
+import { realSeedPlan } from "../../test/seed-plan.ts";
+import { expandQuery } from "./chunks.ts";
+import type { ChunkSimilarity } from "./rank.ts";
+import { createRecipeSearch, type SearchIndex, textSearch } from "./search.ts";
 
 const plan = await realSeedPlan();
 /** The real Seeded Recipes and vocabulary, as the search reads them from Postgres. */

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { realSeedPlan } from "../../test/seed-plan";
-import { expandQuery, recipeChunkTexts } from "./chunks";
+import { realSeedPlan } from "../../test/seed-plan.ts";
+import { expandQuery, recipeChunkTexts } from "./chunks.ts";
 
 const plan = await realSeedPlan();
 const recipe = (id: string) => {

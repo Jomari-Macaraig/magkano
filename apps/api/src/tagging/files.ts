@@ -1,9 +1,9 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { z } from "zod";
-import type { RecipeSeed } from "../../data/recipes";
-import { type PublicationFile, publicationFileSchema } from "../extract/extract";
-import type { TagAssignment, TagAssignments, TaggingItem } from "./tag";
+import type { RecipeSeed } from "../../data/recipes.ts";
+import { type PublicationFile, publicationFileSchema } from "../extract/extract.ts";
+import type { TagAssignment, TagAssignments, TaggingItem } from "./tag.ts";
 
 /** Lowercased, trimmed, repeated spaces collapsed: how Ingredient names compare. */
 export function normaliseName(name: string): string {

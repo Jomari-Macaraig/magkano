@@ -1,4 +1,4 @@
-import type { RecipeCard } from "../recipes";
+import type { RecipeCard } from "../recipes.ts";
 
 /** Cosine similarity of the query to a Recipe's two chunks. */
 export type ChunkSimilarity = { title: number; ingredients: number };

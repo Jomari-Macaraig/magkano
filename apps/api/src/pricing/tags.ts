@@ -1,5 +1,5 @@
-import type { Unit } from "../db/schema";
-import type { CatalogTag } from "./catalog";
+import type { Unit } from "../db/schema.ts";
+import type { CatalogTag } from "./catalog.ts";
 
 export type TagNode = CatalogTag & {
   /** This Tag first, then its parent, then its grandparent. */

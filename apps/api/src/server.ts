@@ -1,12 +1,12 @@
 // Local dev server. The web dev server proxies /api here.
 import { serve } from "@hono/node-server";
-import { createApp } from "./app";
-import { createDb } from "./db/client";
-import { createCatalogStore } from "./pricing/store";
-import { createRecipeStore } from "./recipes";
-import { createOpenAiEmbedder } from "./search/openai";
-import { createRecipeSearch, EMBED_TIMEOUT_MS } from "./search/search";
-import { createPgSearchSource } from "./search/store";
+import { createApp } from "./app.ts";
+import { createDb } from "./db/client.ts";
+import { createCatalogStore } from "./pricing/store.ts";
+import { createRecipeStore } from "./recipes.ts";
+import { createOpenAiEmbedder } from "./search/openai.ts";
+import { createRecipeSearch, EMBED_TIMEOUT_MS } from "./search/search.ts";
+import { createPgSearchSource } from "./search/store.ts";
 
 const port = Number(process.env.API_PORT ?? 8787);
 const databaseUrl = process.env.DATABASE_URL;

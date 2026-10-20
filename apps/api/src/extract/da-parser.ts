@@ -1,5 +1,5 @@
-import { ExtractError } from "./extract-error";
-import { closestAnchor, isoDate, joinFragments, type PdfItem, parsePriceText } from "./pdf-text";
+import { ExtractError } from "./extract-error.ts";
+import { closestAnchor, isoDate, joinFragments, type PdfItem, parsePriceText } from "./pdf-text.ts";
 
 /** DA's 14 category headers, as printed. Any other header fails the extract. */
 export const daCategories = [

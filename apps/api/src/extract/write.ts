@@ -1,6 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import { extractPublication, formatPublicationFile, publicationFileName } from "./extract";
+import { extractPublication, formatPublicationFile, publicationFileName } from "./extract.ts";
 
 /**
  * Extracts one PDF and writes its Publication file into `outDir`, returning the path. The

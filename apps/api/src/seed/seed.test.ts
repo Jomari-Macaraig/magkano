@@ -1,7 +1,7 @@
 import { fileURLToPath } from "node:url";
 import { describe, expect, it, vi } from "vitest";
-import { readSeedInput } from "./input";
-import { runSeed, type SeedInput, type SeedPlan } from "./seed";
+import { readSeedInput } from "./input.ts";
+import { runSeed, type SeedInput, type SeedPlan } from "./seed.ts";
 
 const dataDir = fileURLToPath(new URL("../../data/", import.meta.url));
 

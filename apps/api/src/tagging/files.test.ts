@@ -1,14 +1,14 @@
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
-import { recipes } from "../../data/recipes";
-import { tags } from "../../data/tags";
+import { recipes } from "../../data/recipes.ts";
+import { tags } from "../../data/tags.ts";
 import {
   formatTagAssignments,
   loadPublicationFiles,
   tagAssignmentsSchema,
   taggingItems,
-} from "./files";
+} from "./files.ts";
 
 const dataDir = new URL("../../data/", import.meta.url);
 const publications = loadPublicationFiles(fileURLToPath(new URL("publications/", dataDir)));

@@ -1,8 +1,8 @@
 // The one pricing function (spec: Pricing). Pure: it prices a Draft against the Catalog it is
 // given and never touches the database. All price maths in the app happens here.
-import type { CountUnit, MeasureUnit, Source, Unit } from "../db/schema";
-import type { Catalog, CatalogCommodity, CatalogRecipe } from "./catalog";
-import { buildTagTree, type TagTree } from "./tags";
+import type { CountUnit, MeasureUnit, Source, Unit } from "../db/schema.ts";
+import type { Catalog, CatalogCommodity, CatalogRecipe } from "./catalog.ts";
+import { buildTagTree, type TagTree } from "./tags.ts";
 
 /** The user's choices for one line (line state). */
 export type LineState = {

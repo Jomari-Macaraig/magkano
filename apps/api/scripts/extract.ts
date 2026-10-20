@@ -1,7 +1,7 @@
 // Usage: pnpm --filter @magkano/api extract <pdf>
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { writePublicationFile } from "../src/extract/write";
+import { writePublicationFile } from "../src/extract/write.ts";
 
 const pdf = process.argv[2];
 if (!pdf) {

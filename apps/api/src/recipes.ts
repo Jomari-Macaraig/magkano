@@ -1,6 +1,6 @@
 import { asc, eq } from "drizzle-orm";
-import type { Db } from "./db/client";
-import { ingredients, recipes, type Unit } from "./db/schema";
+import type { Db } from "./db/client.ts";
+import { ingredients, recipes, type Unit } from "./db/schema.ts";
 
 /** What the browse list shows for a Recipe. */
 export type RecipeCard = { id: string; name: string; description: string; servings: number };
