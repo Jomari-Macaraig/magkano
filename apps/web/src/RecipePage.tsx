@@ -3,12 +3,14 @@ import { useState } from "react";
 import { Link, useParams } from "react-router";
 import { ingredientLine } from "./amount";
 import { api } from "./api";
+import { useDraft } from "./DraftProvider";
+import { addRecipe } from "./draft";
 import { Stepper } from "./Stepper";
 import { useApi } from "./useApi";
 
 type Recipe = InferResponseType<(typeof api.recipes)[":id"]["$get"], 200>;
 
-/** A Recipe's Ingredients, rescaled on the client by a 1–20 servings stepper. No prices. */
+/** A Recipe's Ingredients, rescaled on the client by a 1–20 servings stepper, with "Add to list". No prices. */
 export function RecipePage() {
   const { id = "" } = useParams();
   const recipe = useApi<Recipe>(id, () => api.recipes[":id"].$get({ param: { id } }));
@@ -29,6 +31,8 @@ export function RecipePage() {
 }
 
 function RecipeView({ recipe }: { recipe: Recipe }) {
+  const { draft, update } = useDraft();
+  const onList = draft.recipes.find((r) => r.id === recipe.id);
   const [servings, setServings] = useState(recipe.servings);
 
   return (
@@ -42,6 +46,17 @@ function RecipeView({ recipe }: { recipe: Recipe }) {
         <span>Servings</span>
         <Stepper value={servings} onChange={setServings} label="Servings" />
       </div>
+      {onList && onList.servings === servings ? (
+        <p className="on-list-label">✓ on list at {servings} servings</p>
+      ) : (
+        <button
+          type="button"
+          className="button primary"
+          onClick={() => update((d) => addRecipe(d, recipe.id, servings))}
+        >
+          {onList ? `Update list to ${servings} servings` : "Add to list"}
+        </button>
+      )}
       <h2>Ingredients</h2>
       <ul className="ingredients">
         {recipe.ingredients.map((ingredient, index) => {

@@ -1,6 +1,6 @@
 # seed
 
-`pnpm seed` checks every data file, then wipes and reloads Postgres from them in one transaction. The committed files under `apps/api/data/` are the dataset; the database is a copy of them.
+`pnpm seed` checks every data file, embeds any new Recipe search chunks, then wipes and reloads Postgres from them in one transaction. The committed files under `apps/api/data/` are the dataset; the database is a copy of them.
 
 ## Run
 
@@ -23,14 +23,16 @@
 - `recipes` (id = seed key) and `ingredients` (position, prep note, optional, Tag);
 - `publications`, `commodities` (with Tag; a key in several Publications keeps the newest file's fields) and `price_observations` (an `n/a` price writes no row).
 
-`recipe_chunks` is wiped too; embeddings are not built yet.
+- `recipe_chunks`: two per Recipe (title, Ingredients) with their vectors. The CLI builds them from the plan with `embedRecipeChunks` before the write. It reuses vectors from `data/embeddings.json` and calls OpenAI (`text-embedding-3-large`, 1536 dimensions) only for new text, then writes the file back. A run with nothing new makes no call. If new text needs embedding and `OPENAI_API_KEY` is unset, or OpenAI fails, seed fails and the database is unchanged. See [../search/CLAUDE.md](../search/CLAUDE.md).
+
+`runSeed` stays pure: embedding happens in the CLI's `write` callback, so seed tests need no embedder.
 
 ## Key files
 
 - `seed.ts`: `runSeed`, the zod schemas for the hand-edited files, the checks and `SeedPlan`.
 - `input.ts`: `readSeedInput(dataDir)`, shared by the CLI and the tests.
-- `write.ts`: `writeSeedPlan(db, plan)`, the only code here that touches Postgres.
-- `../../scripts/seed.ts`: the CLI (file reading, printing).
+- `write.ts`: `writeSeedPlan(db, plan, chunks)`, the only code here that touches Postgres.
+- `../../scripts/seed.ts`: the CLI (file reading, the embeddings cache, printing).
 
 ## Tests
 
