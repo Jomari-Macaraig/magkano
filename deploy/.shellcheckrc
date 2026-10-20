@@ -1,0 +1,9 @@
+# shellcheck config for deploy/setup.sh (found from the script's directory).
+#
+# SC2329 (function never invoked): the wizard passes its check functions to
+# `check` by name (`check "label" dns_cname host ...`), which shellcheck can't
+# follow, and the shared wizard library keeps helpers this wizard leaves unused
+# or disables (banner, and the secret helpers under the no-secrets rule).
+# SC1087 (braces for arrays): a false positive in the shared library's `ask`,
+# where `$e[Enter keeps current]` is a plain variable followed by text.
+disable=SC2329,SC1087
