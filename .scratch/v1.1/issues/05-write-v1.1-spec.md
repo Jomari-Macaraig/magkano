@@ -1,7 +1,7 @@
 # Write the v1.1 spec
 
 Type: task
-Status: open
+Status: claimed
 Blocked by: 04
 
 ## Question
