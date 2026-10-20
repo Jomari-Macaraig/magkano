@@ -16,6 +16,10 @@ All price maths happens on the server. Spec: "Pricing", "Tags → Matching rule"
   - merge by Tag, or by normalised name when untagged;
   - find Ingredient Matches by the ancestor-chain rule (siblings never match);
   - round up to whole Purchase Units, and default to the lowest line cost (ties go to the lower unit price).
+- [ ] **Count units (owner decisions, 2026-10-21):**
+  - a Purchase Unit of `1 piece` means one of the Commodity's count unit: one head of cabbage, one bundle of pechay. Its weight is `count_weight_g` and its price is ₱/kg × that weight (200 g of cabbage buys 1 head of 755 g, not 250 g);
+  - DA "3-4 Small Bundles" specs are read as bundles per kg (about 286 g each), as `extract` already does;
+  - a DA row with no parsed count weight ("Bangus, Large (1-2 pcs)") is bought by 250 g, as `extract` already sets.
 - [ ] **Special cases:**
   - "to taste" and unknown conversions are priced as one Purchase Unit, and an unknown conversion is a Rough Estimate;
   - a merged line is optional only when every part is optional;

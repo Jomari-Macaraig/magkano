@@ -1,0 +1,4066 @@
+{
+  "publication": {
+    "source": "DA",
+    "title": "Daily Price Index NCR (Thursday, October 8, 2026)",
+    "publishedOn": "2026-10-08",
+    "fileHash": "10032d1fb2ffcbbc97f9e0ddde8994ae2b5aa102906ba1caee883cfccf3a9e37"
+  },
+  "commodities": [
+    {
+      "key": "DA:IMPORTED COMMERCIAL RICE:Basmati Rice:",
+      "category": "IMPORTED COMMERCIAL RICE",
+      "name": "Basmati Rice",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 17000,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:IMPORTED COMMERCIAL RICE:Glutinous Rice:",
+      "category": "IMPORTED COMMERCIAL RICE",
+      "name": "Glutinous Rice",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 6116,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:IMPORTED COMMERCIAL RICE:Jasponica/Japonica Rice:",
+      "category": "IMPORTED COMMERCIAL RICE",
+      "name": "Jasponica/Japonica Rice",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 6033,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:IMPORTED COMMERCIAL RICE:Other Special Rice:White Rice",
+      "category": "IMPORTED COMMERCIAL RICE",
+      "name": "Other Special Rice",
+      "spec": "White Rice",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 6100,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:IMPORTED COMMERCIAL RICE:Premium:5% broken",
+      "category": "IMPORTED COMMERCIAL RICE",
+      "name": "Premium",
+      "spec": "5% broken",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 5505,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:IMPORTED COMMERCIAL RICE:Well Milled:1-19% bran streak",
+      "category": "IMPORTED COMMERCIAL RICE",
+      "name": "Well Milled",
+      "spec": "1-19% bran streak",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 4844,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:IMPORTED COMMERCIAL RICE:Regular Milled:20-40% bran streak",
+      "category": "IMPORTED COMMERCIAL RICE",
+      "name": "Regular Milled",
+      "spec": "20-40% bran streak",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 4375,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:LOCAL COMMERCIAL RICE:Glutinous Rice:",
+      "category": "LOCAL COMMERCIAL RICE",
+      "name": "Glutinous Rice",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 8000,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:LOCAL COMMERCIAL RICE:Other Special Rice:White Rice",
+      "category": "LOCAL COMMERCIAL RICE",
+      "name": "Other Special Rice",
+      "spec": "White Rice",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 6024,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:LOCAL COMMERCIAL RICE:Premium:5% broken",
+      "category": "LOCAL COMMERCIAL RICE",
+      "name": "Premium",
+      "spec": "5% broken",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 5404,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:LOCAL COMMERCIAL RICE:Well Milled:1-19% bran streak",
+      "category": "LOCAL COMMERCIAL RICE",
+      "name": "Well Milled",
+      "spec": "1-19% bran streak",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 4843,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:LOCAL COMMERCIAL RICE:Regular Milled:20-40% bran streak",
+      "category": "LOCAL COMMERCIAL RICE",
+      "name": "Regular Milled",
+      "spec": "20-40% bran streak",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 4485,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:CORN PRODUCTS:Corn (White):Cob, Glutinous",
+      "category": "CORN PRODUCTS",
+      "name": "Corn (White)",
+      "spec": "Cob, Glutinous",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 11487,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:CORN PRODUCTS:Corn (Yellow):Cob, Sweet Corn",
+      "category": "CORN PRODUCTS",
+      "name": "Corn (Yellow)",
+      "spec": "Cob, Sweet Corn",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 8827,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:CORN PRODUCTS:Corn Grits (White, Food Grade):",
+      "category": "CORN PRODUCTS",
+      "name": "Corn Grits (White, Food Grade)",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 9000,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:CORN PRODUCTS:Corn Grits (Yellow, Food Grade):",
+      "category": "CORN PRODUCTS",
+      "name": "Corn Grits (Yellow, Food Grade)",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 9000,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:LEGUMES:Mungbean:",
+      "category": "LEGUMES",
+      "name": "Mungbean",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 14704,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Alumahan (Indian Mackerel):Medium (4-6 pcs/kg)",
+      "category": "FISH PRODUCTS",
+      "name": "Alumahan (Indian Mackerel)",
+      "spec": "Medium (4-6 pcs/kg)",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": 33197,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": "piece",
+      "countWeightG": 200
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Bangus, Large:Large (1-2 pcs)",
+      "category": "FISH PRODUCTS",
+      "name": "Bangus, Large",
+      "spec": "Large (1-2 pcs)",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": "Large",
+      "priceCentavos": 27327,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Bangus, Medium:Medium (3-4 pcs/kg)",
+      "category": "FISH PRODUCTS",
+      "name": "Bangus, Medium",
+      "spec": "Medium (3-4 pcs/kg)",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": 24557,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": "piece",
+      "countWeightG": 285.714
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Bonito (Frigate Tuna):",
+      "category": "FISH PRODUCTS",
+      "name": "Bonito (Frigate Tuna)",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Galunggong, Local:Male, Medium (12-14 pcs/kg)",
+      "category": "FISH PRODUCTS",
+      "name": "Galunggong, Local",
+      "spec": "Male, Medium (12-14 pcs/kg)",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": 28821,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": "piece",
+      "countWeightG": 76.923
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Galunggong, Imported:Male, Medium (12-14 pcs/kg)",
+      "category": "FISH PRODUCTS",
+      "name": "Galunggong, Imported",
+      "spec": "Male, Medium (12-14 pcs/kg)",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": "piece",
+      "countWeightG": 76.923
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Tanigue:Fresh, Whole Round",
+      "category": "FISH PRODUCTS",
+      "name": "Tanigue",
+      "spec": "Fresh, Whole Round",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 63130,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Mackerel, Imported:Frozen, Whole Round",
+      "category": "FISH PRODUCTS",
+      "name": "Mackerel, Imported",
+      "spec": "Frozen, Whole Round",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Pampano, Local:",
+      "category": "FISH PRODUCTS",
+      "name": "Pampano, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 47000,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Pampano, Imported:",
+      "category": "FISH PRODUCTS",
+      "name": "Pampano, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 46863,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Salmon Belly, Local:",
+      "category": "FISH PRODUCTS",
+      "name": "Salmon Belly, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Salmon Belly, Imported:",
+      "category": "FISH PRODUCTS",
+      "name": "Salmon Belly, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 43133,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Salmon Head, Local:",
+      "category": "FISH PRODUCTS",
+      "name": "Salmon Head, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Salmon Head, Imported:",
+      "category": "FISH PRODUCTS",
+      "name": "Salmon Head, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 23000,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Sardines (Tamban):",
+      "category": "FISH PRODUCTS",
+      "name": "Sardines (Tamban)",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 18350,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Squid (Pusit Bisaya), Local:Medium",
+      "category": "FISH PRODUCTS",
+      "name": "Squid (Pusit Bisaya), Local",
+      "spec": "Medium",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": 47679,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Squid, Imported:",
+      "category": "FISH PRODUCTS",
+      "name": "Squid, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 22478,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Tambakol (Yellow-Fin Tuna), Local:Medium, Fresh or Chilled",
+      "category": "FISH PRODUCTS",
+      "name": "Tambakol (Yellow-Fin Tuna), Local",
+      "spec": "Medium, Fresh or Chilled",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": 28078,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Tambakol (Yellow-Fin Tuna), Imported:Medium, Frozen",
+      "category": "FISH PRODUCTS",
+      "name": "Tambakol (Yellow-Fin Tuna), Imported",
+      "spec": "Medium, Frozen",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FISH PRODUCTS:Tilapia:Medium (5-6 pcs/kg)",
+      "category": "FISH PRODUCTS",
+      "name": "Tilapia",
+      "spec": "Medium (5-6 pcs/kg)",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": 15759,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": "piece",
+      "countWeightG": 181.818
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Brisket, Local:Meat with Bones",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Brisket, Local",
+      "spec": "Meat with Bones",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 44328,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Brisket, Imported:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Brisket, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 39000,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Chuck, Local:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Chuck, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 43048,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Chuck, Imported:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Chuck, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Forequarter, Local:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Forequarter, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 49875,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Forequarter, Imported:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Forequarter, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Fore Limb, Local:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Fore Limb, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 44615,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Fore Limb, Imported:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Fore Limb, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Flank, Local:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Flank, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 45048,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Flank, Imported:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Flank, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Loin, Local:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Loin, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 57000,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Loin, Imported:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Loin, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Plate, Local:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Plate, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 45750,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Plate, Imported:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Plate, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Rib Eye, Local:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Rib Eye, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 45688,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Rib Eye, Imported:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Rib Eye, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Rib Set, Local:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Rib Set, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 43448,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Rib Set, Imported:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Rib Set, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Rump, Local:Lean Meat/ Tapadera",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Rump, Local",
+      "spec": "Lean Meat/ Tapadera",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 49946,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Rump, Imported:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Rump, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 41714,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Short Ribs, Local:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Short Ribs, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 42654,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Short Ribs, Imported:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Short Ribs, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Sirloin, Local:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Sirloin, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 49970,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Sirloin, Imported:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Sirloin, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Striploin, Local:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Striploin, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 50794,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Striploin, Imported:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Striploin, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Tenderloin, Local:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Tenderloin, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 74859,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Tenderloin, Imported:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Tenderloin, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Tongue, Local:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Tongue, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 48889,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:BEEF MEAT PRODUCTS:Beef Tongue, Imported:",
+      "category": "BEEF MEAT PRODUCTS",
+      "name": "Beef Tongue, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Belly (Liempo), Local:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Belly (Liempo), Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 36843,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Belly (Liempo), Imported:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Belly (Liempo), Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 30263,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Boston Shoulder, Local:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Boston Shoulder, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 30979,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Boston Shoulder, Imported:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Boston Shoulder, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Chop, Local:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Chop, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 31713,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Chop, Imported:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Chop, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 23321,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Fore Shank, Local:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Fore Shank, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 30073,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Fore Shank, Imported:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Fore Shank, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 18542,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Head, Local:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Head, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 24159,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Head, Imported:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Head, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Hind Leg (Pigue), Local:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Hind Leg (Pigue), Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 31298,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Hind Leg (Pigue), Imported:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Hind Leg (Pigue), Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 23600,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Hind Shank, Local:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Hind Shank, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 29696,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Hind Shank, Imported:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Hind Shank, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 20833,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Loin, Local:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Loin, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 36779,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Loin, Imported:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Loin, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 26909,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Offals, Local:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Offals, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 24393,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Offals, Imported:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Offals, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 12976,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Picnic Shoulder (Kasim), Local:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Picnic Shoulder (Kasim), Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 31275,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Picnic Shoulder (Kasim), Imported:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Picnic Shoulder (Kasim), Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 23789,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Rind/Skin, Local:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Rind/Skin, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 8625,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Rind/Skin, Imported:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Rind/Skin, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Spare Ribs, Local:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Spare Ribs, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 30953,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:PORK MEAT PRODUCTS:Pork Spare Ribs, Imported:",
+      "category": "PORK MEAT PRODUCTS",
+      "name": "Pork Spare Ribs, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 23295,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER LIVESTOCK MEAT PRODUCTS:Carabeef Forequarter, Local:",
+      "category": "OTHER LIVESTOCK MEAT PRODUCTS",
+      "name": "Carabeef Forequarter, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 32667,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER LIVESTOCK MEAT PRODUCTS:Carabeef Forequarter, Imported:",
+      "category": "OTHER LIVESTOCK MEAT PRODUCTS",
+      "name": "Carabeef Forequarter, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER LIVESTOCK MEAT PRODUCTS:Carabeef Meat, Local:",
+      "category": "OTHER LIVESTOCK MEAT PRODUCTS",
+      "name": "Carabeef Meat, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 37731,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER LIVESTOCK MEAT PRODUCTS:Carabeef Meat, Imported:",
+      "category": "OTHER LIVESTOCK MEAT PRODUCTS",
+      "name": "Carabeef Meat, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER LIVESTOCK MEAT PRODUCTS:Carabeef Rump Steak, Local:",
+      "category": "OTHER LIVESTOCK MEAT PRODUCTS",
+      "name": "Carabeef Rump Steak, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 36250,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER LIVESTOCK MEAT PRODUCTS:Carabeef Rump Steak, Imported:",
+      "category": "OTHER LIVESTOCK MEAT PRODUCTS",
+      "name": "Carabeef Rump Steak, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER LIVESTOCK MEAT PRODUCTS:Carabeef Trimmings, Local:",
+      "category": "OTHER LIVESTOCK MEAT PRODUCTS",
+      "name": "Carabeef Trimmings, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER LIVESTOCK MEAT PRODUCTS:Carabeef Trimmings, Imported:",
+      "category": "OTHER LIVESTOCK MEAT PRODUCTS",
+      "name": "Carabeef Trimmings, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER LIVESTOCK MEAT PRODUCTS:Lamb Meat:",
+      "category": "OTHER LIVESTOCK MEAT PRODUCTS",
+      "name": "Lamb Meat",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Breast, Local:Magnolia",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Breast, Local",
+      "spec": "Magnolia",
+      "origin": "Local",
+      "brand": "Magnolia",
+      "sizeLabel": null,
+      "priceCentavos": 22289,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Breast, Local:Bounty Fresh",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Breast, Local",
+      "spec": "Bounty Fresh",
+      "origin": "Local",
+      "brand": "Bounty Fresh",
+      "sizeLabel": null,
+      "priceCentavos": 22667,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Breast, Local:Unbranded, Fresh",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Breast, Local",
+      "spec": "Unbranded, Fresh",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 21469,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Breast, Imported:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Breast, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 23667,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Drumstick, Local:Magnolia",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Drumstick, Local",
+      "spec": "Magnolia",
+      "origin": "Local",
+      "brand": "Magnolia",
+      "sizeLabel": null,
+      "priceCentavos": 22841,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Drumstick, Local:Bounty Fresh",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Drumstick, Local",
+      "spec": "Bounty Fresh",
+      "origin": "Local",
+      "brand": "Bounty Fresh",
+      "sizeLabel": null,
+      "priceCentavos": 22750,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Drumstick, Local:Unbranded, Fresh",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Drumstick, Local",
+      "spec": "Unbranded, Fresh",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 21775,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Drumstick, Imported:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Drumstick, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 14500,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Feet, Local:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Feet, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 15000,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Feet, Imported:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Feet, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Leg Quarter:Magnolia",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Leg Quarter",
+      "spec": "Magnolia",
+      "origin": null,
+      "brand": "Magnolia",
+      "sizeLabel": null,
+      "priceCentavos": 22357,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Leg Quarter:Bounty Fresh",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Leg Quarter",
+      "spec": "Bounty Fresh",
+      "origin": null,
+      "brand": "Bounty Fresh",
+      "sizeLabel": null,
+      "priceCentavos": 23333,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Leg Quarter:Unbranded, Fresh",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Leg Quarter",
+      "spec": "Unbranded, Fresh",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 21615,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Leg Quarter, Imported:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Leg Quarter, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 15976,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Liver, Local:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Liver, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 23634,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Liver, Imported:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Liver, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Neck, Local:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Neck, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 14271,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Neck, Imported:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Neck, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 10000,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Rind/Skin, Local:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Rind/Skin, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 15160,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Rind/Skin, Imported:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Rind/Skin, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Thigh, Local:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Thigh, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 21922,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Thigh, Imported:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Thigh, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Wing, Local:Magnolia",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Wing, Local",
+      "spec": "Magnolia",
+      "origin": "Local",
+      "brand": "Magnolia",
+      "sizeLabel": null,
+      "priceCentavos": 22606,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Wing, Local:Bounty Fresh",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Wing, Local",
+      "spec": "Bounty Fresh",
+      "origin": "Local",
+      "brand": "Bounty Fresh",
+      "sizeLabel": null,
+      "priceCentavos": 22667,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Wing, Local:Unbranded, Fresh",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Wing, Local",
+      "spec": "Unbranded, Fresh",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 21896,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Wing, Imported:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Wing, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 26500,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Whole Chicken, Local:Magnolia",
+      "category": "POULTRY PRODUCTS",
+      "name": "Whole Chicken, Local",
+      "spec": "Magnolia",
+      "origin": "Local",
+      "brand": "Magnolia",
+      "sizeLabel": null,
+      "priceCentavos": 20934,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Whole Chicken, Local:Bounty Fresh",
+      "category": "POULTRY PRODUCTS",
+      "name": "Whole Chicken, Local",
+      "spec": "Bounty Fresh",
+      "origin": "Local",
+      "brand": "Bounty Fresh",
+      "sizeLabel": null,
+      "priceCentavos": 19250,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Whole Chicken, Local:Fully Dressed",
+      "category": "POULTRY PRODUCTS",
+      "name": "Whole Chicken, Local",
+      "spec": "Fully Dressed",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 20059,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Whole Chicken, Imported:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Whole Chicken, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Chicken Egg (White, Medium):56-60 grams/pc",
+      "category": "POULTRY PRODUCTS",
+      "name": "Chicken Egg (White, Medium)",
+      "spec": "56-60 grams/pc",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": 823,
+      "priceBasis": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "piece",
+      "countWeightG": 58
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Duck Meat, Local:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Duck Meat, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 33750,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Duck Meat, Imported:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Duck Meat, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Peckin Duck, Local:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Peckin Duck, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:POULTRY PRODUCTS:Peckin Duck, Imported:",
+      "category": "POULTRY PRODUCTS",
+      "name": "Peckin Duck, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:LOWLAND VEGETABLES:Ampalaya:4-5 pcs/kg",
+      "category": "LOWLAND VEGETABLES",
+      "name": "Ampalaya",
+      "spec": "4-5 pcs/kg",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 11479,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "piece",
+      "countWeightG": 222.222
+    },
+    {
+      "key": "DA:LOWLAND VEGETABLES:Chilli (Green), Local:Haba/Panigang",
+      "category": "LOWLAND VEGETABLES",
+      "name": "Chilli (Green), Local",
+      "spec": "Haba/Panigang",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 20824,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:LOWLAND VEGETABLES:Eggplant:3-4 Small Bundles",
+      "category": "LOWLAND VEGETABLES",
+      "name": "Eggplant",
+      "spec": "3-4 Small Bundles",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 9154,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "bundle",
+      "countWeightG": 285.714
+    },
+    {
+      "key": "DA:LOWLAND VEGETABLES:Native Pechay:3-4 Small Bundles",
+      "category": "LOWLAND VEGETABLES",
+      "name": "Native Pechay",
+      "spec": "3-4 Small Bundles",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 13358,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "bundle",
+      "countWeightG": 285.714
+    },
+    {
+      "key": "DA:LOWLAND VEGETABLES:Pole Sitao:3-4 Small Bundles",
+      "category": "LOWLAND VEGETABLES",
+      "name": "Pole Sitao",
+      "spec": "3-4 Small Bundles",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 13969,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "bundle",
+      "countWeightG": 285.714
+    },
+    {
+      "key": "DA:LOWLAND VEGETABLES:Squash:Suprema Variety",
+      "category": "LOWLAND VEGETABLES",
+      "name": "Squash",
+      "spec": "Suprema Variety",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 6130,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:LOWLAND VEGETABLES:Tomato:15-18 pcs/kg",
+      "category": "LOWLAND VEGETABLES",
+      "name": "Tomato",
+      "spec": "15-18 pcs/kg",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 11257,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "piece",
+      "countWeightG": 60.606
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Bell Pepper (Green), Local:Medium (151-250gm/pc)",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Bell Pepper (Green), Local",
+      "spec": "Medium (151-250gm/pc)",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": 35152,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "piece",
+      "countWeightG": 200.5
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Bell Pepper (Green), Imported:",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Bell Pepper (Green), Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Bell Pepper (Red), Local:Medium (151-250gm/pc)",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Bell Pepper (Red), Local",
+      "spec": "Medium (151-250gm/pc)",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": 28208,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "piece",
+      "countWeightG": 200.5
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Bell Pepper (Red), Imported:",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Bell Pepper (Red), Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Broccoli, Local:Medium (8-10 cm diameter/bunch hd)",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Broccoli, Local",
+      "spec": "Medium (8-10 cm diameter/bunch hd)",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Broccoli, Imported:",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Broccoli, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 28278,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Cauliflower, Local:Medium (8-10 cm diameter/bunch hd)",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Cauliflower, Local",
+      "spec": "Medium (8-10 cm diameter/bunch hd)",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": 31946,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Cauliflower, Imported:",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Cauliflower, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 33333,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Cabbage (Rare Ball):510 gm - 1 kg/head",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Cabbage (Rare Ball)",
+      "spec": "510 gm - 1 kg/head",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 15855,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "head",
+      "countWeightG": 755
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Cabbage (Scorpio):750 gm - 1 kg/head",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Cabbage (Scorpio)",
+      "spec": "750 gm - 1 kg/head",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 15667,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "head",
+      "countWeightG": 875
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Cabbage (Wonder Ball):510 gm - 1 kg/head",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Cabbage (Wonder Ball)",
+      "spec": "510 gm - 1 kg/head",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 15371,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "head",
+      "countWeightG": 755
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Cabbage, Imported:",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Cabbage, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Carrots, Local:8-10 pcs/kg",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Carrots, Local",
+      "spec": "8-10 pcs/kg",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 11773,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "piece",
+      "countWeightG": 111.111
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Carrots, Imported:",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Carrots, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 11042,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Celery:Medium (501-800 g)",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Celery",
+      "spec": "Medium (501-800 g)",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": 32038,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "piece",
+      "countWeightG": 650.5
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Chayote:Medium (301-400 g)",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Chayote",
+      "spec": "Medium (301-400 g)",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": 9229,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "piece",
+      "countWeightG": 350.5
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Habichuelas/Baguio Beans, Local:",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Habichuelas/Baguio Beans, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 15467,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Pechay Baguio:",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Pechay Baguio",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 16895,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Lettuce (Green Ice):",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Lettuce (Green Ice)",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 23908,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Lettuce (Iceberg):Medium (301-450 cm diameter/bunch hd)",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Lettuce (Iceberg)",
+      "spec": "Medium (301-450 cm diameter/bunch hd)",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": 35735,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Lettuce (Romaine):",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Lettuce (Romaine)",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 23015,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:Lettuce, Imported:",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "Lettuce, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:White Potato, Local:10-12 pcs/kg",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "White Potato, Local",
+      "spec": "10-12 pcs/kg",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 14740,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "piece",
+      "countWeightG": 90.909
+    },
+    {
+      "key": "DA:HIGHLAND VEGETABLES:White Potato, Imported:",
+      "category": "HIGHLAND VEGETABLES",
+      "name": "White Potato, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:SPICES:Chilli (Red), Local:Tingala",
+      "category": "SPICES",
+      "name": "Chilli (Red), Local",
+      "spec": "Tingala",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 22782,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:SPICES:Tiger Chillies, Imported:",
+      "category": "SPICES",
+      "name": "Tiger Chillies, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 35200,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:SPICES:Garlic, Native/Local:",
+      "category": "SPICES",
+      "name": "Garlic, Native/Local",
+      "spec": "",
+      "origin": "Native/Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 36636,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:SPICES:Garlic, Imported:",
+      "category": "SPICES",
+      "name": "Garlic, Imported",
+      "spec": "",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 15024,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:SPICES:Ginger, Local:Fresh, Loose, Medium (150-300 gm)",
+      "category": "SPICES",
+      "name": "Ginger, Local",
+      "spec": "Fresh, Loose, Medium (150-300 gm)",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": 19422,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "piece",
+      "countWeightG": 225
+    },
+    {
+      "key": "DA:SPICES:Ginger, Imported:Fresh, Loose, Medium (150-300 gm)",
+      "category": "SPICES",
+      "name": "Ginger, Imported",
+      "spec": "Fresh, Loose, Medium (150-300 gm)",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": 13406,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "piece",
+      "countWeightG": 225
+    },
+    {
+      "key": "DA:SPICES:Red Onion, Local:13-15 pcs/kg",
+      "category": "SPICES",
+      "name": "Red Onion, Local",
+      "spec": "13-15 pcs/kg",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 12212,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "piece",
+      "countWeightG": 71.429
+    },
+    {
+      "key": "DA:SPICES:Red Onion, Imported:Medium",
+      "category": "SPICES",
+      "name": "Red Onion, Imported",
+      "spec": "Medium",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:SPICES:Red Onion, Imported:Large",
+      "category": "SPICES",
+      "name": "Red Onion, Imported",
+      "spec": "Large",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": "Large",
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:SPICES:White Onion, Local:",
+      "category": "SPICES",
+      "name": "White Onion, Local",
+      "spec": "",
+      "origin": "Local",
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 16157,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:SPICES:White Onion, Imported:Medium",
+      "category": "SPICES",
+      "name": "White Onion, Imported",
+      "spec": "Medium",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": "Medium",
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:SPICES:White Onion, Imported:Large",
+      "category": "SPICES",
+      "name": "White Onion, Imported",
+      "spec": "Large",
+      "origin": "Imported",
+      "brand": null,
+      "sizeLabel": "Large",
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FRUITS:Avocado:",
+      "category": "FRUITS",
+      "name": "Avocado",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 39143,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FRUITS:Banana (Lakatan):8-10 pcs/kg",
+      "category": "FRUITS",
+      "name": "Banana (Lakatan)",
+      "spec": "8-10 pcs/kg",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 9698,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "piece",
+      "countWeightG": 111.111
+    },
+    {
+      "key": "DA:FRUITS:Banana (Latundan):10-12 pcs/kg",
+      "category": "FRUITS",
+      "name": "Banana (Latundan)",
+      "spec": "10-12 pcs/kg",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 7856,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "piece",
+      "countWeightG": 90.909
+    },
+    {
+      "key": "DA:FRUITS:Banana (Saba):",
+      "category": "FRUITS",
+      "name": "Banana (Saba)",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 6563,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FRUITS:Calamansi:",
+      "category": "FRUITS",
+      "name": "Calamansi",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 9646,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FRUITS:Mango (Carabao):Ripe, 3-4 pcs/kg",
+      "category": "FRUITS",
+      "name": "Mango (Carabao)",
+      "spec": "Ripe, 3-4 pcs/kg",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 25485,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "piece",
+      "countWeightG": 285.714
+    },
+    {
+      "key": "DA:FRUITS:Melon:",
+      "category": "FRUITS",
+      "name": "Melon",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 10343,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FRUITS:Papaya:Solo, Ripe, 2-3 pcs/kg",
+      "category": "FRUITS",
+      "name": "Papaya",
+      "spec": "Solo, Ripe, 2-3 pcs/kg",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 7967,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1,
+        "unit": "piece"
+      },
+      "countUnit": "piece",
+      "countWeightG": 400
+    },
+    {
+      "key": "DA:FRUITS:Pomelo:",
+      "category": "FRUITS",
+      "name": "Pomelo",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 18707,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:FRUITS:Watermelon:",
+      "category": "FRUITS",
+      "name": "Watermelon",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 7643,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER BASIC COMMODITIES:Salt (Rock):",
+      "category": "OTHER BASIC COMMODITIES",
+      "name": "Salt (Rock)",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 2229,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER BASIC COMMODITIES:Salt (Iodized):",
+      "category": "OTHER BASIC COMMODITIES",
+      "name": "Salt (Iodized)",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 4284,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER BASIC COMMODITIES:Sugar (Refined):",
+      "category": "OTHER BASIC COMMODITIES",
+      "name": "Sugar (Refined)",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 8163,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER BASIC COMMODITIES:Sugar (Washed):",
+      "category": "OTHER BASIC COMMODITIES",
+      "name": "Sugar (Washed)",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 7469,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER BASIC COMMODITIES:Sugar (Brown):",
+      "category": "OTHER BASIC COMMODITIES",
+      "name": "Sugar (Brown)",
+      "spec": "",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 7258,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER BASIC COMMODITIES:Cooking Oil (Palm):350 ml/bottle",
+      "category": "OTHER BASIC COMMODITIES",
+      "name": "Cooking Oil (Palm)",
+      "spec": "350 ml/bottle",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 3998,
+      "priceBasis": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER BASIC COMMODITIES:Cooking Oil (Palm):1 Liter/bottle",
+      "category": "OTHER BASIC COMMODITIES",
+      "name": "Cooking Oil (Palm)",
+      "spec": "1 Liter/bottle",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 10218,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER BASIC COMMODITIES:Cooking Oil (Coconut):350 ml/bottle",
+      "category": "OTHER BASIC COMMODITIES",
+      "name": "Cooking Oil (Coconut)",
+      "spec": "350 ml/bottle",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 5933,
+      "priceBasis": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER BASIC COMMODITIES:Cooking Oil (Coconut):1 Liter/bottle",
+      "category": "OTHER BASIC COMMODITIES",
+      "name": "Cooking Oil (Coconut)",
+      "spec": "1 Liter/bottle",
+      "origin": null,
+      "brand": null,
+      "sizeLabel": null,
+      "priceCentavos": 15441,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER BASIC COMMODITIES:Cooking Oil (Minola):500 ml/bottle",
+      "category": "OTHER BASIC COMMODITIES",
+      "name": "Cooking Oil (Minola)",
+      "spec": "500 ml/bottle",
+      "origin": null,
+      "brand": "Minola",
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 500,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 500,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER BASIC COMMODITIES:Cooking Oil (Minola):1 Liter/bottle",
+      "category": "OTHER BASIC COMMODITIES",
+      "name": "Cooking Oil (Minola)",
+      "spec": "1 Liter/bottle",
+      "origin": null,
+      "brand": "Minola",
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER BASIC COMMODITIES:Cooking Oil (Spring):500 ml/bottle",
+      "category": "OTHER BASIC COMMODITIES",
+      "name": "Cooking Oil (Spring)",
+      "spec": "500 ml/bottle",
+      "origin": null,
+      "brand": "Spring",
+      "sizeLabel": null,
+      "priceCentavos": null,
+      "priceBasis": {
+        "amount": 500,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 500,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER BASIC COMMODITIES:Cooking Oil (Spring):1 Liter/bottle",
+      "category": "OTHER BASIC COMMODITIES",
+      "name": "Cooking Oil (Spring)",
+      "spec": "1 Liter/bottle",
+      "origin": null,
+      "brand": "Spring",
+      "sizeLabel": null,
+      "priceCentavos": 14333,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DA:OTHER BASIC COMMODITIES:Cooking Oil (Palm Olein, Jolly Brand):1 Liter/bottle",
+      "category": "OTHER BASIC COMMODITIES",
+      "name": "Cooking Oil (Palm Olein, Jolly Brand)",
+      "spec": "1 Liter/bottle",
+      "origin": null,
+      "brand": "Jolly",
+      "sizeLabel": null,
+      "priceCentavos": 16089,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    }
+  ],
+  "dropped": [
+    {
+      "category": "CORN PRODUCTS",
+      "name": "Corn Cracked (Yellow, Feed Grade)",
+      "spec": "",
+      "priceCentavos": 4700,
+      "reason": "feed grade"
+    },
+    {
+      "category": "CORN PRODUCTS",
+      "name": "Corn Grits (Feed Grade)",
+      "spec": "",
+      "priceCentavos": 4550,
+      "reason": "feed grade"
+    }
+  ]
+}

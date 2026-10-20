@@ -1,0 +1,2156 @@
+{
+  "publication": {
+    "source": "DTI",
+    "title": "BNPC Suggested Retail Prices (effective 11 May 2026)",
+    "publishedOn": "2026-05-11",
+    "fileHash": "ef9ecbfbcf19215e74bac76512e0acb272e6e3c62cc30391e97402755c15c6ae"
+  },
+  "commodities": [
+    {
+      "key": "DTI:CANNED SARDINES IN TOMATO SAUCE:Saba Philippines Sardines:155g",
+      "category": "CANNED SARDINES IN TOMATO SAUCE",
+      "name": "Saba Philippines Sardines",
+      "spec": "155g",
+      "origin": null,
+      "brand": "Saba",
+      "sizeLabel": "155g",
+      "priceCentavos": 2150,
+      "priceBasis": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CANNED SARDINES IN TOMATO SAUCE:Atami Regular Lid:155g",
+      "category": "CANNED SARDINES IN TOMATO SAUCE",
+      "name": "Atami Regular Lid",
+      "spec": "155g",
+      "origin": null,
+      "brand": "Atami",
+      "sizeLabel": "155g",
+      "priceCentavos": 2250,
+      "priceBasis": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CANNED SARDINES IN TOMATO SAUCE:Mikado Regular Lid:155g",
+      "category": "CANNED SARDINES IN TOMATO SAUCE",
+      "name": "Mikado Regular Lid",
+      "spec": "155g",
+      "origin": null,
+      "brand": "Mikado",
+      "sizeLabel": "155g",
+      "priceCentavos": 2250,
+      "priceBasis": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CANNED SARDINES IN TOMATO SAUCE:King Cup Regular Lid:155g",
+      "category": "CANNED SARDINES IN TOMATO SAUCE",
+      "name": "King Cup Regular Lid",
+      "spec": "155g",
+      "origin": null,
+      "brand": "King Cup",
+      "sizeLabel": "155g",
+      "priceCentavos": 1800,
+      "priceBasis": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CANNED SARDINES IN TOMATO SAUCE:Mariko Regular Lid:155g",
+      "category": "CANNED SARDINES IN TOMATO SAUCE",
+      "name": "Mariko Regular Lid",
+      "spec": "155g",
+      "origin": null,
+      "brand": "Mariko",
+      "sizeLabel": "155g",
+      "priceCentavos": 2375,
+      "priceBasis": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CANNED SARDINES IN TOMATO SAUCE:Sallenas Regular Lid:155g",
+      "category": "CANNED SARDINES IN TOMATO SAUCE",
+      "name": "Sallenas Regular Lid",
+      "spec": "155g",
+      "origin": null,
+      "brand": "Sallenas",
+      "sizeLabel": "155g",
+      "priceCentavos": 2475,
+      "priceBasis": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CANNED SARDINES IN TOMATO SAUCE:Atami EOC:155g",
+      "category": "CANNED SARDINES IN TOMATO SAUCE",
+      "name": "Atami EOC",
+      "spec": "155g",
+      "origin": null,
+      "brand": "Atami",
+      "sizeLabel": "155g",
+      "priceCentavos": 2325,
+      "priceBasis": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CANNED SARDINES IN TOMATO SAUCE:Mikado EOC:155g",
+      "category": "CANNED SARDINES IN TOMATO SAUCE",
+      "name": "Mikado EOC",
+      "spec": "155g",
+      "origin": null,
+      "brand": "Mikado",
+      "sizeLabel": "155g",
+      "priceCentavos": 2325,
+      "priceBasis": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CANNED SARDINES IN TOMATO SAUCE:555 Bonus Pack:155g",
+      "category": "CANNED SARDINES IN TOMATO SAUCE",
+      "name": "555 Bonus Pack",
+      "spec": "155g",
+      "origin": null,
+      "brand": "555",
+      "sizeLabel": "155g",
+      "priceCentavos": 2050,
+      "priceBasis": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CANNED SARDINES IN TOMATO SAUCE:Lucky 7:155g",
+      "category": "CANNED SARDINES IN TOMATO SAUCE",
+      "name": "Lucky 7",
+      "spec": "155g",
+      "origin": null,
+      "brand": "Lucky 7",
+      "sizeLabel": "155g",
+      "priceCentavos": 2050,
+      "priceBasis": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CANNED SARDINES IN TOMATO SAUCE:Toyo Bonus Green EOC:155g",
+      "category": "CANNED SARDINES IN TOMATO SAUCE",
+      "name": "Toyo Bonus Green EOC",
+      "spec": "155g",
+      "origin": null,
+      "brand": "Toyo",
+      "sizeLabel": "155g",
+      "priceCentavos": 2000,
+      "priceBasis": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CONDENSED MILK:Jersey Sweetened Condensed Creamer:390g",
+      "category": "CONDENSED MILK",
+      "name": "Jersey Sweetened Condensed Creamer",
+      "spec": "390g",
+      "origin": null,
+      "brand": "Jersey",
+      "sizeLabel": "390g",
+      "priceCentavos": 4450,
+      "priceBasis": {
+        "amount": 390,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 390,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:EVAPORATED MILK:Angel Filled Milk:370mL",
+      "category": "EVAPORATED MILK",
+      "name": "Angel Filled Milk",
+      "spec": "370mL",
+      "origin": null,
+      "brand": "Angel",
+      "sizeLabel": "370mL",
+      "priceCentavos": 4800,
+      "priceBasis": {
+        "amount": 370,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 370,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:POWDERED MILK:Bear Brand:135g",
+      "category": "POWDERED MILK",
+      "name": "Bear Brand",
+      "spec": "135g",
+      "origin": null,
+      "brand": "Bear Brand",
+      "sizeLabel": "135g",
+      "priceCentavos": 5000,
+      "priceBasis": {
+        "amount": 135,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 135,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:POWDERED MILK:Birch Tree Full Cream Milk:150g",
+      "category": "POWDERED MILK",
+      "name": "Birch Tree Full Cream Milk",
+      "spec": "150g",
+      "origin": null,
+      "brand": "Birch Tree",
+      "sizeLabel": "150g",
+      "priceCentavos": 7075,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:POWDERED MILK:Jersey Fortified Instant Powdered Milk Drink:300g",
+      "category": "POWDERED MILK",
+      "name": "Jersey Fortified Instant Powdered Milk Drink",
+      "spec": "300g",
+      "origin": null,
+      "brand": "Jersey",
+      "sizeLabel": "300g",
+      "priceCentavos": 9625,
+      "priceBasis": {
+        "amount": 300,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 300,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:COFFEE 3-IN-1 ORIGINAL:Café Puro:17g",
+      "category": "COFFEE 3-IN-1 ORIGINAL",
+      "name": "Café Puro",
+      "spec": "17g",
+      "origin": null,
+      "brand": "Café Puro",
+      "sizeLabel": "17g",
+      "priceCentavos": 470,
+      "priceBasis": {
+        "amount": 17,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 17,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:COFFEE 3-IN-1 ORIGINAL:Blend 45 3-in-1 Original:18g",
+      "category": "COFFEE 3-IN-1 ORIGINAL",
+      "name": "Blend 45 3-in-1 Original",
+      "spec": "18g",
+      "origin": null,
+      "brand": "Blend 45",
+      "sizeLabel": "18g",
+      "priceCentavos": 550,
+      "priceBasis": {
+        "amount": 18,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 18,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:COFFEE 3-IN-1 ORIGINAL:San Mig Coffee 3-in-1 Original:20g",
+      "category": "COFFEE 3-IN-1 ORIGINAL",
+      "name": "San Mig Coffee 3-in-1 Original",
+      "spec": "20g",
+      "origin": null,
+      "brand": "San Mig",
+      "sizeLabel": "20g",
+      "priceCentavos": 750,
+      "priceBasis": {
+        "amount": 20,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 20,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:COFFEE 3-IN-1 ORIGINAL:Nescafe Original:20g",
+      "category": "COFFEE 3-IN-1 ORIGINAL",
+      "name": "Nescafe Original",
+      "spec": "20g",
+      "origin": null,
+      "brand": "Nescafe",
+      "sizeLabel": "20g",
+      "priceCentavos": 775,
+      "priceBasis": {
+        "amount": 20,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 20,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:COFFEE 3-IN-1 ORIGINAL:Kopiko Black:30g",
+      "category": "COFFEE 3-IN-1 ORIGINAL",
+      "name": "Kopiko Black",
+      "spec": "30g",
+      "origin": null,
+      "brand": "Kopiko",
+      "sizeLabel": "30g",
+      "priceCentavos": 850,
+      "priceBasis": {
+        "amount": 30,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 30,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:COFFEE 3-IN-1 ORIGINAL:Great Taste Original Twin Pack:33g",
+      "category": "COFFEE 3-IN-1 ORIGINAL",
+      "name": "Great Taste Original Twin Pack",
+      "spec": "33g",
+      "origin": null,
+      "brand": "Great Taste",
+      "sizeLabel": "33g",
+      "priceCentavos": 1000,
+      "priceBasis": {
+        "amount": 33,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 33,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:BREAD:Pinoy Pandesal (10pcs./pack):250g",
+      "category": "BREAD",
+      "name": "Pinoy Pandesal (10pcs./pack)",
+      "spec": "250g",
+      "origin": null,
+      "brand": "Pinoy",
+      "sizeLabel": "250g",
+      "priceCentavos": 2725,
+      "priceBasis": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:BREAD:Pinoy Tasty:450g",
+      "category": "BREAD",
+      "name": "Pinoy Tasty",
+      "spec": "450g",
+      "origin": null,
+      "brand": "Pinoy",
+      "sizeLabel": "450g",
+      "priceCentavos": 4400,
+      "priceBasis": {
+        "amount": 450,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 450,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:INSTANT MAMI NOODLES CHICKEN & BEEF FLAVOR:Payless (Chicken Espesyal and Beef Paborito Flavor):55g",
+      "category": "INSTANT MAMI NOODLES CHICKEN & BEEF FLAVOR",
+      "name": "Payless (Chicken Espesyal and Beef Paborito Flavor)",
+      "spec": "55g",
+      "origin": null,
+      "brand": "Payless",
+      "sizeLabel": "55g",
+      "priceCentavos": 750,
+      "priceBasis": {
+        "amount": 55,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 55,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:INSTANT MAMI NOODLES CHICKEN & BEEF FLAVOR:Quick Chow (Instant Mami Beef and Instant Mami Chicken):55g",
+      "category": "INSTANT MAMI NOODLES CHICKEN & BEEF FLAVOR",
+      "name": "Quick Chow (Instant Mami Beef and Instant Mami Chicken)",
+      "spec": "55g",
+      "origin": null,
+      "brand": "Quick Chow",
+      "sizeLabel": "55g",
+      "priceCentavos": 775,
+      "priceBasis": {
+        "amount": 55,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 55,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:INSTANT MAMI NOODLES CHICKEN & BEEF FLAVOR:Ho-Mi (Instant Mami Chicken & Garlic, Instant Mami Beef Brisket):55g",
+      "category": "INSTANT MAMI NOODLES CHICKEN & BEEF FLAVOR",
+      "name": "Ho-Mi (Instant Mami Chicken & Garlic, Instant Mami Beef Brisket)",
+      "spec": "55g",
+      "origin": null,
+      "brand": "Ho-Mi",
+      "sizeLabel": "55g",
+      "priceCentavos": 900,
+      "priceBasis": {
+        "amount": 55,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 55,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:INSTANT MAMI NOODLES CHICKEN & BEEF FLAVOR:Lucky Me! (Instant Mami Chicken na Chicken and Instant Mami Beef na Beef):55g",
+      "category": "INSTANT MAMI NOODLES CHICKEN & BEEF FLAVOR",
+      "name": "Lucky Me! (Instant Mami Chicken na Chicken and Instant Mami Beef na Beef)",
+      "spec": "55g",
+      "origin": null,
+      "brand": "Lucky Me!",
+      "sizeLabel": "55g",
+      "priceCentavos": 900,
+      "priceBasis": {
+        "amount": 55,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 55,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:IODIZED ROCK SALT:Lasap Rock Salt:250g",
+      "category": "IODIZED ROCK SALT",
+      "name": "Lasap Rock Salt",
+      "spec": "250g",
+      "origin": null,
+      "brand": "Lasap",
+      "sizeLabel": "250g",
+      "priceCentavos": 750,
+      "priceBasis": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:IODIZED ROCK SALT:Fidel Coarse (Red) - Luzon:250g",
+      "category": "IODIZED ROCK SALT",
+      "name": "Fidel Coarse (Red) - Luzon",
+      "spec": "250g",
+      "origin": null,
+      "brand": "Fidel",
+      "sizeLabel": "250g",
+      "priceCentavos": 1100,
+      "priceBasis": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:IODIZED ROCK SALT:Lasap Rock Salt:500g",
+      "category": "IODIZED ROCK SALT",
+      "name": "Lasap Rock Salt",
+      "spec": "500g",
+      "origin": null,
+      "brand": "Lasap",
+      "sizeLabel": "500g",
+      "priceCentavos": 1350,
+      "priceBasis": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:IODIZED ROCK SALT:Fidel Coarse (Red) - Luzon:500g",
+      "category": "IODIZED ROCK SALT",
+      "name": "Fidel Coarse (Red) - Luzon",
+      "spec": "500g",
+      "origin": null,
+      "brand": "Fidel",
+      "sizeLabel": "500g",
+      "priceCentavos": 2125,
+      "priceBasis": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:IODIZED ROCK SALT:Lasap Rock Salt:1kg",
+      "category": "IODIZED ROCK SALT",
+      "name": "Lasap Rock Salt",
+      "spec": "1kg",
+      "origin": null,
+      "brand": "Lasap",
+      "sizeLabel": "1kg",
+      "priceCentavos": 2500,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:IODIZED SALT:Lasap Iodized Salt:100g",
+      "category": "IODIZED SALT",
+      "name": "Lasap Iodized Salt",
+      "spec": "100g",
+      "origin": null,
+      "brand": "Lasap",
+      "sizeLabel": "100g",
+      "priceCentavos": 475,
+      "priceBasis": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:IODIZED SALT:Lasap Iodized Salt:250g",
+      "category": "IODIZED SALT",
+      "name": "Lasap Iodized Salt",
+      "spec": "250g",
+      "origin": null,
+      "brand": "Lasap",
+      "sizeLabel": "250g",
+      "priceCentavos": 975,
+      "priceBasis": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:IODIZED SALT:Fidel Refined (Blue) - Luzon:250g",
+      "category": "IODIZED SALT",
+      "name": "Fidel Refined (Blue) - Luzon",
+      "spec": "250g",
+      "origin": null,
+      "brand": "Fidel",
+      "sizeLabel": "250g",
+      "priceCentavos": 1175,
+      "priceBasis": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:IODIZED SALT:Fidel Free Flowing (Green) - Luzon:250g",
+      "category": "IODIZED SALT",
+      "name": "Fidel Free Flowing (Green) - Luzon",
+      "spec": "250g",
+      "origin": null,
+      "brand": "Fidel",
+      "sizeLabel": "250g",
+      "priceCentavos": 1275,
+      "priceBasis": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:IODIZED SALT:Lasap Iodized Salt:500g",
+      "category": "IODIZED SALT",
+      "name": "Lasap Iodized Salt",
+      "spec": "500g",
+      "origin": null,
+      "brand": "Lasap",
+      "sizeLabel": "500g",
+      "priceCentavos": 1725,
+      "priceBasis": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:IODIZED SALT:Fidel Refined (Blue) - Luzon:500g",
+      "category": "IODIZED SALT",
+      "name": "Fidel Refined (Blue) - Luzon",
+      "spec": "500g",
+      "origin": null,
+      "brand": "Fidel",
+      "sizeLabel": "500g",
+      "priceCentavos": 2300,
+      "priceBasis": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:IODIZED SALT:Fidel Free Flowing (Green) - Luzon:500g",
+      "category": "IODIZED SALT",
+      "name": "Fidel Free Flowing (Green) - Luzon",
+      "spec": "500g",
+      "origin": null,
+      "brand": "Fidel",
+      "sizeLabel": "500g",
+      "priceCentavos": 2500,
+      "priceBasis": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:IODIZED SALT:Lasap Iodized Salt:1kg",
+      "category": "IODIZED SALT",
+      "name": "Lasap Iodized Salt",
+      "spec": "1kg",
+      "origin": null,
+      "brand": "Lasap",
+      "sizeLabel": "1kg",
+      "priceCentavos": 3150,
+      "priceBasis": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:LUNCHEON MEAT:Purefoods Chinese Style:165g",
+      "category": "LUNCHEON MEAT",
+      "name": "Purefoods Chinese Style",
+      "spec": "165g",
+      "origin": null,
+      "brand": "Purefoods",
+      "sizeLabel": "165g",
+      "priceCentavos": 4000,
+      "priceBasis": {
+        "amount": 165,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 165,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:LUNCHEON MEAT:CDO Chinese Style:165g",
+      "category": "LUNCHEON MEAT",
+      "name": "CDO Chinese Style",
+      "spec": "165g",
+      "origin": null,
+      "brand": "CDO",
+      "sizeLabel": "165g",
+      "priceCentavos": 4100,
+      "priceBasis": {
+        "amount": 165,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 165,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:MEAT LOAF:Winner - Supermarket (SMKT):150g",
+      "category": "MEAT LOAF",
+      "name": "Winner - Supermarket (SMKT)",
+      "spec": "150g",
+      "origin": null,
+      "brand": "Winner",
+      "sizeLabel": "150g",
+      "priceCentavos": 1800,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:MEAT LOAF:555:150g",
+      "category": "MEAT LOAF",
+      "name": "555",
+      "spec": "150g",
+      "origin": null,
+      "brand": "555",
+      "sizeLabel": "150g",
+      "priceCentavos": 1950,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:MEAT LOAF:CDO:150g",
+      "category": "MEAT LOAF",
+      "name": "CDO",
+      "spec": "150g",
+      "origin": null,
+      "brand": "CDO",
+      "sizeLabel": "150g",
+      "priceCentavos": 2175,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:MEAT LOAF:Argentina:150g",
+      "category": "MEAT LOAF",
+      "name": "Argentina",
+      "spec": "150g",
+      "origin": null,
+      "brand": "Argentina",
+      "sizeLabel": "150g",
+      "priceCentavos": 2375,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:MEAT LOAF:Argentina:170g",
+      "category": "MEAT LOAF",
+      "name": "Argentina",
+      "spec": "170g",
+      "origin": null,
+      "brand": "Argentina",
+      "sizeLabel": "170g",
+      "priceCentavos": 2525,
+      "priceBasis": {
+        "amount": 170,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 170,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CORNED BEEF:Bingo:150g",
+      "category": "CORNED BEEF",
+      "name": "Bingo",
+      "spec": "150g",
+      "origin": null,
+      "brand": "Bingo",
+      "sizeLabel": "150g",
+      "priceCentavos": 2300,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CORNED BEEF:El Rancho - SMKT:150g",
+      "category": "CORNED BEEF",
+      "name": "El Rancho - SMKT",
+      "spec": "150g",
+      "origin": null,
+      "brand": "El Rancho",
+      "sizeLabel": "150g",
+      "priceCentavos": 3125,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CORNED BEEF:Winner - SMKT:150g",
+      "category": "CORNED BEEF",
+      "name": "Winner - SMKT",
+      "spec": "150g",
+      "origin": null,
+      "brand": "Winner",
+      "sizeLabel": "150g",
+      "priceCentavos": 3375,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CORNED BEEF:Star Corned Beef:150g",
+      "category": "CORNED BEEF",
+      "name": "Star Corned Beef",
+      "spec": "150g",
+      "origin": null,
+      "brand": "Star",
+      "sizeLabel": "150g",
+      "priceCentavos": 3400,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CORNED BEEF:Young's Town Premium:150g",
+      "category": "CORNED BEEF",
+      "name": "Young's Town Premium",
+      "spec": "150g",
+      "origin": null,
+      "brand": "Young's Town",
+      "sizeLabel": "150g",
+      "priceCentavos": 3425,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CORNED BEEF:Argentina:150g",
+      "category": "CORNED BEEF",
+      "name": "Argentina",
+      "spec": "150g",
+      "origin": null,
+      "brand": "Argentina",
+      "sizeLabel": "150g",
+      "priceCentavos": 3675,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:CORNED BEEF:Argentina:175g",
+      "category": "CORNED BEEF",
+      "name": "Argentina",
+      "spec": "175g",
+      "origin": null,
+      "brand": "Argentina",
+      "sizeLabel": "175g",
+      "priceCentavos": 4175,
+      "priceBasis": {
+        "amount": 175,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 175,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:BEEF LOAF:Purefoods:150g",
+      "category": "BEEF LOAF",
+      "name": "Purefoods",
+      "spec": "150g",
+      "origin": null,
+      "brand": "Purefoods",
+      "sizeLabel": "150g",
+      "priceCentavos": 1815,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:BEEF LOAF:Bingo:150g",
+      "category": "BEEF LOAF",
+      "name": "Bingo",
+      "spec": "150g",
+      "origin": null,
+      "brand": "Bingo",
+      "sizeLabel": "150g",
+      "priceCentavos": 1950,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:BEEF LOAF:555:150g",
+      "category": "BEEF LOAF",
+      "name": "555",
+      "spec": "150g",
+      "origin": null,
+      "brand": "555",
+      "sizeLabel": "150g",
+      "priceCentavos": 1950,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:BEEF LOAF:CDO:150g",
+      "category": "BEEF LOAF",
+      "name": "CDO",
+      "spec": "150g",
+      "origin": null,
+      "brand": "CDO",
+      "sizeLabel": "150g",
+      "priceCentavos": 2175,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:BEEF LOAF:Argentina:150g",
+      "category": "BEEF LOAF",
+      "name": "Argentina",
+      "spec": "150g",
+      "origin": null,
+      "brand": "Argentina",
+      "sizeLabel": "150g",
+      "priceCentavos": 2200,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:BEEF LOAF:El Rancho - SMKT:155g",
+      "category": "BEEF LOAF",
+      "name": "El Rancho - SMKT",
+      "spec": "155g",
+      "origin": null,
+      "brand": "El Rancho",
+      "sizeLabel": "155g",
+      "priceCentavos": 1950,
+      "priceBasis": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 155,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:BEEF LOAF:Argentina:170g",
+      "category": "BEEF LOAF",
+      "name": "Argentina",
+      "spec": "170g",
+      "origin": null,
+      "brand": "Argentina",
+      "sizeLabel": "170g",
+      "priceCentavos": 2500,
+      "priceBasis": {
+        "amount": 170,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 170,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:BEEF LOAF:Purefoods:200g",
+      "category": "BEEF LOAF",
+      "name": "Purefoods",
+      "spec": "200g",
+      "origin": null,
+      "brand": "Purefoods",
+      "sizeLabel": "200g",
+      "priceCentavos": 2490,
+      "priceBasis": {
+        "amount": 200,
+        "unit": "g"
+      },
+      "purchaseUnit": {
+        "amount": 200,
+        "unit": "g"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:VINEGAR - GIN AND PET BOTTLE:Datu Puti - White Vinegar:350ml",
+      "category": "VINEGAR - GIN AND PET BOTTLE",
+      "name": "Datu Puti - White Vinegar",
+      "spec": "350ml",
+      "origin": null,
+      "brand": "Datu Puti",
+      "sizeLabel": "350ml",
+      "priceCentavos": 1925,
+      "priceBasis": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:VINEGAR - GIN AND PET BOTTLE:Silver Swan Sukang Puti:350ml",
+      "category": "VINEGAR - GIN AND PET BOTTLE",
+      "name": "Silver Swan Sukang Puti",
+      "spec": "350ml",
+      "origin": null,
+      "brand": "Silver Swan",
+      "sizeLabel": "350ml",
+      "priceCentavos": 1925,
+      "priceBasis": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:VINEGAR - DOY / REFILL PACK:Silver Swan Sukang Puti Doy Pack:200ml",
+      "category": "VINEGAR - DOY / REFILL PACK",
+      "name": "Silver Swan Sukang Puti Doy Pack",
+      "spec": "200ml",
+      "origin": null,
+      "brand": "Silver Swan",
+      "sizeLabel": "200ml",
+      "priceCentavos": 875,
+      "priceBasis": {
+        "amount": 200,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 200,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:PATIS - GIN / PET BOTTLE:Lorins PET Bottle:350ml",
+      "category": "PATIS - GIN / PET BOTTLE",
+      "name": "Lorins PET Bottle",
+      "spec": "350ml",
+      "origin": null,
+      "brand": "Lorins",
+      "sizeLabel": "350ml",
+      "priceCentavos": 2750,
+      "priceBasis": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:PATIS - GIN / PET BOTTLE:Silver Swan Special:350ml",
+      "category": "PATIS - GIN / PET BOTTLE",
+      "name": "Silver Swan Special",
+      "spec": "350ml",
+      "origin": null,
+      "brand": "Silver Swan",
+      "sizeLabel": "350ml",
+      "priceCentavos": 2600,
+      "priceBasis": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:PATIS - GIN / PET BOTTLE:Datu Puti:350ml",
+      "category": "PATIS - GIN / PET BOTTLE",
+      "name": "Datu Puti",
+      "spec": "350ml",
+      "origin": null,
+      "brand": "Datu Puti",
+      "sizeLabel": "350ml",
+      "priceCentavos": 2850,
+      "priceBasis": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:PATIS - GIN / PET BOTTLE:Nelicom Special:350ml",
+      "category": "PATIS - GIN / PET BOTTLE",
+      "name": "Nelicom Special",
+      "spec": "350ml",
+      "origin": null,
+      "brand": "Nelicom",
+      "sizeLabel": "350ml",
+      "priceCentavos": 3275,
+      "priceBasis": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:PATIS - DOY PACK / BUDGET PACK:Lorins - Pouch:150ml",
+      "category": "PATIS - DOY PACK / BUDGET PACK",
+      "name": "Lorins - Pouch",
+      "spec": "150ml",
+      "origin": null,
+      "brand": "Lorins",
+      "sizeLabel": "150ml",
+      "priceCentavos": 1325,
+      "priceBasis": {
+        "amount": 150,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 150,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:PATIS - DOY PACK / BUDGET PACK:Lorins - Budget Pouch:350ml",
+      "category": "PATIS - DOY PACK / BUDGET PACK",
+      "name": "Lorins - Budget Pouch",
+      "spec": "350ml",
+      "origin": null,
+      "brand": "Lorins",
+      "sizeLabel": "350ml",
+      "priceCentavos": 2375,
+      "priceBasis": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:SOY SAUCE - GIN / PET BOTTLE:Datu Puti:350ml",
+      "category": "SOY SAUCE - GIN / PET BOTTLE",
+      "name": "Datu Puti",
+      "spec": "350ml",
+      "origin": null,
+      "brand": "Datu Puti",
+      "sizeLabel": "350ml",
+      "priceCentavos": 2125,
+      "priceBasis": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:SOY SAUCE - GIN / PET BOTTLE:Silver Swan:350ml",
+      "category": "SOY SAUCE - GIN / PET BOTTLE",
+      "name": "Silver Swan",
+      "spec": "350ml",
+      "origin": null,
+      "brand": "Silver Swan",
+      "sizeLabel": "350ml",
+      "priceCentavos": 2225,
+      "priceBasis": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 350,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    },
+    {
+      "key": "DTI:SOY SAUCE - DOY PACK / REFILL PACK:Silver Swan Doy Pack:200ml",
+      "category": "SOY SAUCE - DOY PACK / REFILL PACK",
+      "name": "Silver Swan Doy Pack",
+      "spec": "200ml",
+      "origin": null,
+      "brand": "Silver Swan",
+      "sizeLabel": "200ml",
+      "priceCentavos": 1200,
+      "priceBasis": {
+        "amount": 200,
+        "unit": "ml"
+      },
+      "purchaseUnit": {
+        "amount": 200,
+        "unit": "ml"
+      },
+      "countUnit": null,
+      "countWeightG": null
+    }
+  ],
+  "dropped": [
+    {
+      "category": "IODIZED ROCK SALT",
+      "name": "Fidel Coarse (Red) - Visayas / Mindanao",
+      "spec": "250g",
+      "priceCentavos": 1175,
+      "reason": "outside Luzon"
+    },
+    {
+      "category": "IODIZED ROCK SALT",
+      "name": "Fidel Coarse (Red) - Visayas/ Mindanao",
+      "spec": "500g",
+      "priceCentavos": 2250,
+      "reason": "outside Luzon"
+    },
+    {
+      "category": "IODIZED SALT",
+      "name": "Fidel Refined (Blue) - Visayas / Mindanao",
+      "spec": "250g",
+      "priceCentavos": 1225,
+      "reason": "outside Luzon"
+    },
+    {
+      "category": "IODIZED SALT",
+      "name": "Fidel Free Flowing (Green) - Visayas & Mindanao",
+      "spec": "250g",
+      "priceCentavos": 1350,
+      "reason": "outside Luzon"
+    },
+    {
+      "category": "IODIZED SALT",
+      "name": "Fidel Refined (Blue) - Visayas & Mindanao",
+      "spec": "500g",
+      "priceCentavos": 2325,
+      "reason": "outside Luzon"
+    },
+    {
+      "category": "IODIZED SALT",
+      "name": "Fidel Free Flowing (Green) - Visayas & Mindanao",
+      "spec": "500g",
+      "priceCentavos": 2550,
+      "reason": "outside Luzon"
+    },
+    {
+      "category": "DISTILLED WATER",
+      "name": "SM Bonus",
+      "spec": "325mL",
+      "priceCentavos": 650,
+      "reason": "water"
+    },
+    {
+      "category": "DISTILLED WATER",
+      "name": "Wilkins",
+      "spec": "330mL",
+      "priceCentavos": 1200,
+      "reason": "water"
+    },
+    {
+      "category": "DISTILLED WATER",
+      "name": "Absolute",
+      "spec": "350mL",
+      "priceCentavos": 1200,
+      "reason": "water"
+    },
+    {
+      "category": "DISTILLED WATER",
+      "name": "SM Bonus",
+      "spec": "500mL",
+      "priceCentavos": 850,
+      "reason": "water"
+    },
+    {
+      "category": "DISTILLED WATER",
+      "name": "Absolute",
+      "spec": "500mL",
+      "priceCentavos": 1675,
+      "reason": "water"
+    },
+    {
+      "category": "DISTILLED WATER",
+      "name": "Wilkins",
+      "spec": "500mL",
+      "priceCentavos": 1700,
+      "reason": "water"
+    },
+    {
+      "category": "DISTILLED WATER",
+      "name": "Wilkins",
+      "spec": "1L",
+      "priceCentavos": 2500,
+      "reason": "water"
+    },
+    {
+      "category": "DISTILLED WATER",
+      "name": "Absolute",
+      "spec": "1L",
+      "priceCentavos": 2500,
+      "reason": "water"
+    },
+    {
+      "category": "DISTILLED WATER",
+      "name": "Absolute",
+      "spec": "6L",
+      "priceCentavos": 8300,
+      "reason": "water"
+    },
+    {
+      "category": "DISTILLED WATER",
+      "name": "SM Bonus",
+      "spec": "6.6L",
+      "priceCentavos": 5450,
+      "reason": "water"
+    },
+    {
+      "category": "DISTILLED WATER",
+      "name": "Wilkins",
+      "spec": "7L",
+      "priceCentavos": 9000,
+      "reason": "water"
+    },
+    {
+      "category": "PURIFIED WATER",
+      "name": "SM Bonus",
+      "spec": "300mL",
+      "priceCentavos": 500,
+      "reason": "water"
+    },
+    {
+      "category": "PURIFIED WATER",
+      "name": "Magnolia Pure",
+      "spec": "355mL",
+      "priceCentavos": 850,
+      "reason": "water"
+    },
+    {
+      "category": "PURIFIED WATER",
+      "name": "Refresh",
+      "spec": "500mL",
+      "priceCentavos": 675,
+      "reason": "water"
+    },
+    {
+      "category": "PURIFIED WATER",
+      "name": "Natures Spring",
+      "spec": "500mL",
+      "priceCentavos": 1050,
+      "reason": "water"
+    },
+    {
+      "category": "PURIFIED WATER",
+      "name": "Magnolia Pure",
+      "spec": "500mL",
+      "priceCentavos": 1050,
+      "reason": "water"
+    },
+    {
+      "category": "PURIFIED WATER",
+      "name": "Wilkins Pure",
+      "spec": "500mL",
+      "priceCentavos": 1100,
+      "reason": "water"
+    },
+    {
+      "category": "PURIFIED WATER",
+      "name": "Natures Spring",
+      "spec": "1L",
+      "priceCentavos": 1650,
+      "reason": "water"
+    },
+    {
+      "category": "PURIFIED WATER",
+      "name": "Wilkins Pure",
+      "spec": "1L",
+      "priceCentavos": 1800,
+      "reason": "water"
+    },
+    {
+      "category": "PURIFIED WATER",
+      "name": "Magnolia Pure",
+      "spec": "1L",
+      "priceCentavos": 1950,
+      "reason": "water"
+    },
+    {
+      "category": "MINERALIZED WATER",
+      "name": "Supersavers Nature's Pure",
+      "spec": "330mL",
+      "priceCentavos": 715,
+      "reason": "water"
+    },
+    {
+      "category": "MINERALIZED WATER",
+      "name": "Hidden Spring",
+      "spec": "330mL",
+      "priceCentavos": 880,
+      "reason": "water"
+    },
+    {
+      "category": "MINERALIZED WATER",
+      "name": "Viva - Nationwide",
+      "spec": "330mL",
+      "priceCentavos": 1000,
+      "reason": "water"
+    },
+    {
+      "category": "MINERALIZED WATER",
+      "name": "Refresh",
+      "spec": "350mL",
+      "priceCentavos": 660,
+      "reason": "water"
+    },
+    {
+      "category": "MINERALIZED WATER",
+      "name": "Summit",
+      "spec": "350mL",
+      "priceCentavos": 1000,
+      "reason": "water"
+    },
+    {
+      "category": "MINERALIZED WATER",
+      "name": "Refresh",
+      "spec": "500mL",
+      "priceCentavos": 915,
+      "reason": "water"
+    },
+    {
+      "category": "MINERALIZED WATER",
+      "name": "Supersavers Nature's Pure",
+      "spec": "500mL",
+      "priceCentavos": 870,
+      "reason": "water"
+    },
+    {
+      "category": "MINERALIZED WATER",
+      "name": "Robinsons Mall",
+      "spec": "500mL",
+      "priceCentavos": 1045,
+      "reason": "water"
+    },
+    {
+      "category": "MINERALIZED WATER",
+      "name": "Hidden Spring",
+      "spec": "500mL",
+      "priceCentavos": 1210,
+      "reason": "water"
+    },
+    {
+      "category": "MINERALIZED WATER",
+      "name": "Viva - Nationwide",
+      "spec": "500mL",
+      "priceCentavos": 1300,
+      "reason": "water"
+    },
+    {
+      "category": "MINERALIZED WATER",
+      "name": "Summit",
+      "spec": "500mL",
+      "priceCentavos": 1200,
+      "reason": "water"
+    },
+    {
+      "category": "MINERALIZED WATER",
+      "name": "Viva - Nationwide",
+      "spec": "1L",
+      "priceCentavos": 1900,
+      "reason": "water"
+    },
+    {
+      "category": "MINERALIZED WATER",
+      "name": "Summit",
+      "spec": "1L",
+      "priceCentavos": 1950,
+      "reason": "water"
+    },
+    {
+      "category": "MINERALIZED WATER",
+      "name": "Summit",
+      "spec": "6L",
+      "priceCentavos": 7500,
+      "reason": "water"
+    },
+    {
+      "category": "DETERGENT SOAP/LAUNDRY SOAP",
+      "name": "Sulit Bar (BLUE, WHITE, KALAMANSI, SPECKLED BLUE) - Visayas / Mindanao",
+      "spec": "330g",
+      "priceCentavos": 2100,
+      "reason": "not food"
+    },
+    {
+      "category": "DETERGENT SOAP/LAUNDRY SOAP",
+      "name": "Bareta Bar (BLUE, SPECKLED BLUE, WHITE, KALAMANSI) - Visayas / Mindanao",
+      "spec": "330g",
+      "priceCentavos": 2175,
+      "reason": "not food"
+    },
+    {
+      "category": "DETERGENT SOAP/LAUNDRY SOAP",
+      "name": "Budget Bar (WHITE ANTI BAC, FABCON, KALAMANSI, POWER BLUE, SPECKLED BLUE) - Luzon",
+      "spec": "330g",
+      "priceCentavos": 2100,
+      "reason": "not food"
+    },
+    {
+      "category": "DETERGENT SOAP/LAUNDRY SOAP",
+      "name": "Bareta Bar FABCON - Visayas / Mindanao",
+      "spec": "330g",
+      "priceCentavos": 2325,
+      "reason": "not food"
+    },
+    {
+      "category": "DETERGENT SOAP/LAUNDRY SOAP",
+      "name": "Speed Long Bar (WHITE, BLUE, SPECKLED BLUE, KALAMANSI)",
+      "spec": "370g",
+      "priceCentavos": 2575,
+      "reason": "not food"
+    },
+    {
+      "category": "DETERGENT SOAP/LAUNDRY SOAP",
+      "name": "Surf Detergent Bar Active Clean Power Bula Power Puti - BLUE",
+      "spec": "360g",
+      "priceCentavos": 2325,
+      "reason": "not food"
+    },
+    {
+      "category": "DETERGENT SOAP/LAUNDRY SOAP",
+      "name": "Surf Detergent Bar Active Clean Power Bula Power Puti (KALAMANSI, TAWAS)",
+      "spec": "360g",
+      "priceCentavos": 2450,
+      "reason": "not food"
+    },
+    {
+      "category": "DETERGENT SOAP/LAUNDRY SOAP",
+      "name": "Champion Bar (SUPRA CLEAN, CITRUS FRESH)",
+      "spec": "370g",
+      "priceCentavos": 2500,
+      "reason": "not food"
+    },
+    {
+      "category": "DETERGENT SOAP/LAUNDRY SOAP",
+      "name": "Bonux (FLOWER FIESTA, KALAMANSI ZEST)",
+      "spec": "380g",
+      "priceCentavos": 2100,
+      "reason": "not food"
+    },
+    {
+      "category": "DETERGENT SOAP/LAUNDRY SOAP",
+      "name": "Tide Bar ORIGINAL SCENT",
+      "spec": "380g",
+      "priceCentavos": 2400,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Export Vigil Candles White/Yellow (12pcs./pack)",
+      "spec": "#01",
+      "priceCentavos": 6050,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Manila Wax Votive White/Yellow (6pcs./pack)",
+      "spec": "#01",
+      "priceCentavos": 8276,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Manila Wax Sperma White (10pcs./pack)",
+      "spec": "#02",
+      "priceCentavos": 5411,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Manila Wax Votive White/Yellow (6pcs./pack)",
+      "spec": "#02",
+      "priceCentavos": 7109,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Export Candles White (20pcs./pack)",
+      "spec": "#03",
+      "priceCentavos": 3900,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "5-Star Esperma White (20pcs./pack)",
+      "spec": "#03",
+      "priceCentavos": 5425,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Manila Wax Votive White/Yellow (6pcs./pack)",
+      "spec": "#03",
+      "priceCentavos": 5941,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Manila Wax Sperma White (20pcs./pack)",
+      "spec": "#03",
+      "priceCentavos": 6472,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Liwanag Esperma Candle White (20pcs./pack)",
+      "spec": "#03",
+      "priceCentavos": 8100,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Manila Wax Sperma White (20pcs./pack)",
+      "spec": "#04",
+      "priceCentavos": 4774,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Export Candles White (20pcs./pack)",
+      "spec": "#05",
+      "priceCentavos": 6050,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Liwanag Esperma Candle White (20pcs./pack)",
+      "spec": "#05",
+      "priceCentavos": 10975,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Export Candles White (20pcs./pack)",
+      "spec": "#06",
+      "priceCentavos": 8500,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "5-Star Esperma White (25pcs./pack)",
+      "spec": "#06",
+      "priceCentavos": 11550,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Export Candles White (12pcs./pack)",
+      "spec": "#08",
+      "priceCentavos": 6050,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "5-Star Esperma White (5pcs./pack)",
+      "spec": "#08",
+      "priceCentavos": 15025,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Export Candles White (10pcs./pack)",
+      "spec": "#10",
+      "priceCentavos": 7275,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Export Candles White (10pcs./pack)",
+      "spec": "#12",
+      "priceCentavos": 7275,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "5-Star Esperma White (4pcs./pack)",
+      "spec": "#14",
+      "priceCentavos": 3625,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Manila Wax Sperma White (4pcs./pack)",
+      "spec": "#14",
+      "priceCentavos": 5410,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Export Candles White (8pcs./pack)",
+      "spec": "#14",
+      "priceCentavos": 7275,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Export Candles White (4pcs./pack)",
+      "spec": "#16",
+      "priceCentavos": 3625,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Liwanag Esperma Candle White (4pcs./pack)",
+      "spec": "#16",
+      "priceCentavos": 5775,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Manila Wax Sperma White (2pcs./pack)",
+      "spec": "#16",
+      "priceCentavos": 5941,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Export Candles White (4pcs./pack)",
+      "spec": "#18",
+      "priceCentavos": 4850,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Liwanag Esperma Candle White (4pcs./pack)",
+      "spec": "#18",
+      "priceCentavos": 9475,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Export Candles White (4pcs./pack)",
+      "spec": "#19",
+      "priceCentavos": 9700,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Export Candles White (2pcs./pack)",
+      "spec": "#20x2",
+      "priceCentavos": 6675,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Export Candles White (4pcs./pack)",
+      "spec": "#20x4",
+      "priceCentavos": 12150,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "5-Star Esperma White (2pcs./pack)",
+      "spec": "#22",
+      "priceCentavos": 11775,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Liwanag Esperma Candle White (2pcs./pack)",
+      "spec": "#24",
+      "priceCentavos": 22000,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Export Vigil Candles White/Yellow (4pcs./pack)",
+      "spec": "#2x4",
+      "priceCentavos": 5450,
+      "reason": "not food"
+    },
+    {
+      "category": "CANDLES",
+      "name": "Export Vigil Candles White/Yellow (6pcs./pack)",
+      "spec": "#2x6",
+      "priceCentavos": 8500,
+      "reason": "not food"
+    },
+    {
+      "category": "TOILET SOAP",
+      "name": "Green Cross (Pure Care)",
+      "spec": "55g",
+      "priceCentavos": 1500,
+      "reason": "not food"
+    },
+    {
+      "category": "TOILET SOAP",
+      "name": "Palmolive Naturals - Pinkish Glow (pink), Hydrating Glow (green), White with Natural Papaya, and White with Natural Milk",
+      "spec": "55g",
+      "priceCentavos": 1700,
+      "reason": "not food"
+    },
+    {
+      "category": "TOILET SOAP",
+      "name": "Safeguard Pure White",
+      "spec": "55g",
+      "priceCentavos": 2200,
+      "reason": "not food"
+    },
+    {
+      "category": "TOILET SOAP",
+      "name": "Green Cross (Pure Care)",
+      "spec": "85g",
+      "priceCentavos": 2575,
+      "reason": "not food"
+    },
+    {
+      "category": "TOILET SOAP",
+      "name": "Safeguard Pure White",
+      "spec": "82g",
+      "priceCentavos": 3125,
+      "reason": "not food"
+    },
+    {
+      "category": "TOILET SOAP",
+      "name": "Green Cross (Pure Care)",
+      "spec": "125g",
+      "priceCentavos": 3725,
+      "reason": "not food"
+    },
+    {
+      "category": "TOILET SOAP",
+      "name": "Safeguard Pure White",
+      "spec": "119g",
+      "priceCentavos": 4900,
+      "reason": "not food"
+    },
+    {
+      "category": "BATTERIES",
+      "name": "Energizer Max - Blister Pack of 4",
+      "spec": "AA",
+      "priceCentavos": 21675,
+      "reason": "not food"
+    },
+    {
+      "category": "BATTERIES",
+      "name": "Eveready Super Heavy Duty Black - Blister Pack of 2",
+      "spec": "D",
+      "priceCentavos": 8175,
+      "reason": "not food"
+    }
+  ]
+}
