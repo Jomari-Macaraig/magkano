@@ -21,15 +21,17 @@ Needs Node 22+, pnpm 10 and Docker.
 1. `cp .env.example .env`, then set `VITE_CLERK_PUBLISHABLE_KEY` (a Clerk development instance). `OPENAI_API_KEY` is optional.
 2. `pnpm install`
 3. `pnpm dev`: starts Postgres (Docker, port **5435**), applies migrations, then runs the API on :8787 and the web app on :5173. Open http://localhost:5173.
+4. `pnpm seed` (once, and after any data file changes): loads the committed data files into Postgres.
 
-Root scripts: `pnpm extract <pdf>`, `pnpm tag [--check]`, `pnpm typecheck`, `pnpm lint` / `pnpm format` (Biome), `pnpm test` (Vitest, all apps), `pnpm db:up` / `db:down`, `pnpm db:generate` / `db:migrate`.
+Root scripts: `pnpm extract <pdf>`, `pnpm tag [--check]`, `pnpm seed`, `pnpm typecheck`, `pnpm lint` / `pnpm format` (Biome), `pnpm test` (Vitest, all apps), `pnpm db:up` / `db:down`, `pnpm db:generate` / `db:migrate`.
 
 - pnpm workspace with two apps; workspace packages export TypeScript source directly (no build step).
 - The compose project is named `magkano-local`, so it never shares a container or volume with other Postgres containers on the machine.
 
 ## Subsystem Documentation
 
-- [apps/api/CLAUDE.md](apps/api/CLAUDE.md): Hono app, `{ error, message }` error shape, zod validation, Drizzle schema (9 tables) and migrations, Hono RPC types
+- [apps/api/CLAUDE.md](apps/api/CLAUDE.md): Hono app, `{ error, message }` error shape, zod validation, Drizzle schema (9 tables) and migrations, Hono RPC types, the Recipe routes
 - [apps/api/src/extract/CLAUDE.md](apps/api/src/extract/CLAUDE.md): `pnpm extract <pdf>`, DA/DTI PDF parsers, filters, Publication JSON files under `apps/api/data/publications/`
-- [apps/api/src/tagging/CLAUDE.md](apps/api/src/tagging/CLAUDE.md): `pnpm tag [--check]`, `tag-assignments.json` / `reference-tags.json`, the Tag vocabulary and Seeded Recipes data files, the stubbable OpenAI tagging client
-- [apps/web/CLAUDE.md](apps/web/CLAUDE.md): Vite + React SPA, Clerk header, React Router, typed API client and the `/api` dev proxy
+- [apps/api/src/tagging/CLAUDE.md](apps/api/src/tagging/CLAUDE.md): `pnpm tag`, the reviewed `tag-assignments.json`, the Tag vocabulary and Seeded Recipes data files, the stubbable OpenAI tagging client
+- [apps/api/src/seed/CLAUDE.md](apps/api/src/seed/CLAUDE.md): `pnpm seed`, its checks (all problems listed, nothing written on failure), the one-transaction wipe and reload
+- [apps/web/CLAUDE.md](apps/web/CLAUDE.md): Vite + React SPA, Clerk header, React Router, typed API client and the `/api` dev proxy, home and Recipe page

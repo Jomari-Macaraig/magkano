@@ -1,5 +1,5 @@
 // Usage: pnpm tag            propose a Tag for every Ingredient and Commodity with no entry
-//        pnpm tag --check    accept proposals that agree with reference-tags.json
+//        pnpm tag --check    accept proposals that agree with reference-tags.json (first review only; that file is now deleted)
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { recipes } from "../data/recipes";

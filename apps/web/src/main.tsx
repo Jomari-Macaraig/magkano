@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { HomePage } from "./HomePage";
 import { Layout } from "./Layout";
+import { RecipePage } from "./RecipePage";
 import "./styles.css";
 
 const publishableKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
@@ -14,7 +15,10 @@ if (!publishableKey) {
 const router = createBrowserRouter([
   {
     element: <Layout />,
-    children: [{ path: "/", element: <HomePage /> }],
+    children: [
+      { path: "/", element: <HomePage /> },
+      { path: "/recipes/:id", element: <RecipePage /> },
+    ],
   },
 ]);
 
