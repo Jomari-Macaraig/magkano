@@ -35,6 +35,7 @@ An interactive bash wizard that walks the project owner through the one-time acc
 
 - A missing tool skips its checks with a warning; they're listed at the end under "still to do by hand".
 - A failed check offers retry, continue (also listed at the end) or quit (prints `--from N`).
+- A `vercel env ls` that errors (logged out, expired) fails the check, never passes it with an empty list. The apex A check needs the IP Vercel shows; without one it's listed for checking by hand.
 - `vercel env ls` shows names only; the wizard keeps only the name column. It can't see whether a key is `pk_test_` or `pk_live_`, so the owner checks that by eye.
 - Vercel's Deployment Protection can make preview URLs answer 401 to `curl`; the owner then checks in a logged-in browser and continues.
 

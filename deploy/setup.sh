@@ -302,7 +302,7 @@ begin() {
   printf '\n'
 }
 
-# ask_public VAR "Prompt": reads a non-secret value (Enter leaves it empty).
+# ask_public "Prompt": prints a non-secret value (Enter leaves it empty).
 ask_public() {
   local input=""
   read -e -r -p "  $1 " input || true
@@ -368,14 +368,13 @@ dns_no_caa() {
 # _words "a b": its words, sorted and de-duplicated, one line.
 _words() { printf '%s\n' "$1" | tr ' ' '\n' | grep -v '^$' | sort -u | tr '\n' ' '; }
 
-# dns_apex_a EXPECTED: the apex A records are exactly EXPECTED (any order; with
-# no EXPECTED, at least one record exists). GoDaddy's parked IPs fail this.
+# dns_apex_a EXPECTED: the apex A records are exactly EXPECTED (any order), so
+# GoDaddy's parked IPs fail this. Only IPv4 lines count, not dig's error text.
 dns_apex_a() {
   local out
-  out=$(_dig A "$DOMAIN" | tr '\n' ' ')
+  out=$(_dig A "$DOMAIN" | grep -E '^[0-9]+(\.[0-9]+){3}$' | tr '\n' ' ' || true)
   note "$DOMAIN A → ${out:-(none)}"
-  [[ -n "$out" ]] || return 1
-  [[ -z "$1" ]] && return 0
+  [[ -n "$out" && -n "$1" ]] || return 1
   [[ "$(_words "$out")" == "$(_words "$1")" ]]
 }
 
@@ -440,15 +439,21 @@ vercel_ready() {
   have vercel && [[ -f .vercel/project.json ]]
 }
 
+# Fails (rather than listing nothing) when the CLI errors, e.g. when logged out.
 vercel_env_names() {
-  vercel env ls "$1" </dev/null 2>/dev/null | awk 'NF && $1 ~ /^[A-Z_][A-Z0-9_]*$/ { print $1 }' | sort -u
+  local out
+  if ! out=$(vercel env ls "$1" </dev/null 2>/dev/null); then
+    note "'vercel env ls $1' failed (logged out? run 'vercel login')" >&2
+    return 1
+  fi
+  printf '%s\n' "$out" | awk 'NF && $1 ~ /^[A-Z_][A-Z0-9_]*$/ { print $1 }' | sort -u
 }
 
 # env_has ENV NAME...: every NAME exists in Vercel environment ENV.
 env_has() {
   local env="$1" names name missing=0
   shift
-  names=$(vercel_env_names "$env")
+  names=$(vercel_env_names "$env") || return 1
   for name in "$@"; do
     if grep -qx "$name" <<<"$names"; then note "$env: $name is set"
     else note "$env: $name is missing"; missing=1; fi
@@ -458,8 +463,9 @@ env_has() {
 
 # env_lacks_db ENV: Vercel environment ENV has no DATABASE_URL* of its own.
 env_lacks_db() {
-  local found
-  found=$(vercel_env_names "$1" | grep -E '^DATABASE_URL' | tr '\n' ' ' || true)
+  local names found
+  names=$(vercel_env_names "$1") || return 1
+  found=$(printf '%s\n' "$names" | grep -E '^DATABASE_URL' | tr '\n' ' ' || true)
   note "$1: DATABASE_URL* vars → ${found:-(none)}"
   [[ -z "$found" ]]
 }
@@ -552,6 +558,8 @@ step_4() {
   say "Optional: link this checkout so the wizard can check Vercel env vars for you."
   note "  'vercel link' writes .vercel/project.json (IDs only, no secrets) and adds .vercel"
   note "  to .gitignore."
+  warn "If it offers to pull environment variables (.env.local), answer No: that would"
+  warn "write keys to disk."
   if have vercel; then
     if vercel_ready; then
       ok "this checkout is already linked to a Vercel project"
@@ -684,8 +692,12 @@ step_8() {
   local vercel_ip=""
   if have dig; then
     vercel_ip=$(ask_public "Type the apex A value Vercel shows (public IP, or Enter to skip):")
-    vercel_ip=$(echo "$vercel_ip" | xargs)
-    check "$DOMAIN A record points at Vercel${vercel_ip:+ ($vercel_ip)}" dns_apex_a "$vercel_ip"
+    vercel_ip=$(printf '%s' "$vercel_ip" | tr -d '[:space:]')
+    if [[ -n "$vercel_ip" ]]; then
+      check "$DOMAIN A record points at Vercel ($vercel_ip)" dns_apex_a "$vercel_ip"
+    else
+      skip_check "$DOMAIN A record is Vercel's IP, not GoDaddy's parked one (no IP given)"
+    fi
     check "$WWW CNAME points at Vercel" dns_cname "$WWW" "vercel-dns"
   else
     skip_check "apex A and www CNAME at GoDaddy (dig not installed)"
@@ -720,7 +732,7 @@ step_9() {
   step "  ${BOLD}preview/…${RESET} Neon host."
   local preview=""
   preview=$(ask_public "Paste the preview URL (https://…vercel.app, public; Enter to skip):")
-  preview=$(echo "$preview" | xargs)
+  preview=$(printf '%s' "$preview" | tr -d '[:space:]')
   if [[ -n "$preview" ]]; then
     note "Vercel protects previews by default: a 401 here means checking in your"
     note "logged-in browser instead (then choose 'continue')."
@@ -743,6 +755,8 @@ step_9() {
     check "https://$DOMAIN loads" http_status "https://$DOMAIN/" 200 "text/html"
     check "https://$WWW redirects to https://$DOMAIN" http_redirect "https://$WWW/" "https://$DOMAIN/"
     check "http://$DOMAIN redirects to https://$DOMAIN" http_redirect "http://$DOMAIN/" "https://$DOMAIN/"
+  else
+    skip_check "https://$DOMAIN loads, and the www and http:// redirects (curl not installed)"
   fi
   open_url "https://$DOMAIN"
   step "Sign up and sign in with email (the pk_live_ key). Search and price a Draft."
