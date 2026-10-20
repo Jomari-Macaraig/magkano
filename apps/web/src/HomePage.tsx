@@ -1,20 +1,40 @@
 import type { InferResponseType } from "hono/client";
+import { useState } from "react";
 import { Link } from "react-router";
 import { api } from "./api";
-import { useApi } from "./useApi";
+import { SearchBox, useRecipeSearch } from "./RecipeSearch";
+import { type Loaded, useApi } from "./useApi";
 
 type RecipeCard = InferResponseType<typeof api.recipes.$get, 200>[number];
 
-/** Every Seeded Recipe as a card, sorted by name, each linking to its Recipe page. */
+/**
+ * A search box over the Recipe cards: search results while there's a query, otherwise every
+ * Seeded Recipe sorted by name. Each card links to its Recipe page.
+ */
 export function HomePage() {
-  const recipes = useApi<RecipeCard[]>("recipes", () => api.recipes.$get());
+  const browse = useApi<RecipeCard[]>("recipes", () => api.recipes.$get());
+  const [query, setQuery] = useState("");
+  const search = useRecipeSearch(query);
+  const recipes: Loaded<RecipeCard[]> =
+    search.state === "idle"
+      ? browse
+      : search.state === "ready"
+        ? { state: "ready", data: search.data.results }
+        : search;
 
   return (
     <section>
       <h1>How much will dinner cost?</h1>
       <p className="muted">Pick a Filipino recipe to see what it needs.</p>
+      <SearchBox value={query} onChange={setQuery} />
+      {search.state === "ready" && search.data.fallback && (
+        <p className="muted small">Basic search: smart search is unavailable right now.</p>
+      )}
       {recipes.state === "loading" && <p className="muted">Loading recipes…</p>}
       {recipes.state === "error" && <p role="alert">Couldn't load recipes. Try again later.</p>}
+      {recipes.state === "ready" && recipes.data.length === 0 && (
+        <p className="muted">No recipes match "{query.trim()}".</p>
+      )}
       {recipes.state === "ready" && (
         <ul className="cards">
           {recipes.data.map((recipe) => (

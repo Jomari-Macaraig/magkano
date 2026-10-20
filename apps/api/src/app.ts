@@ -3,10 +3,11 @@ import { HTTPException } from "hono/http-exception";
 import { z } from "zod";
 import { errorResponse } from "./errors";
 import type { RecipeStore } from "./recipes";
+import type { RecipeSearch } from "./search/search";
 import { validate } from "./validate";
 
 /** What the routes read from. */
-export type AppDeps = { recipes: RecipeStore };
+export type AppDeps = { recipes: RecipeStore; search: RecipeSearch };
 
 /** Builds the API. Every route lives under `/api`. */
 export function createApp(deps: AppDeps) {
@@ -33,7 +34,12 @@ export function createApp(deps: AppDeps) {
       const recipe = await deps.recipes.get(id);
       if (!recipe) return errorResponse(c, 404, "not_found", `No Recipe "${id}"`);
       return c.json(recipe, 200);
-    });
+    })
+    .get(
+      "/search",
+      validate("query", z.object({ q: z.string().max(200).default("") })),
+      async (c) => c.json(await deps.search.search(c.req.valid("query").q), 200),
+    );
 }
 
 export type AppType = ReturnType<typeof createApp>;

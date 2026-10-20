@@ -4,7 +4,11 @@ import { createApp } from "../src/app";
 import { validate } from "../src/validate";
 
 /** These tests read no data, so the store is empty. */
-const createTestApp = () => createApp({ recipes: { list: async () => [], get: async () => null } });
+const createTestApp = () =>
+  createApp({
+    recipes: { list: async () => [], get: async () => null },
+    search: { search: async () => ({ fallback: false, results: [] }) },
+  });
 
 describe("API skeleton", () => {
   const app = createTestApp();

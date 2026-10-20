@@ -27,7 +27,10 @@ const store: RecipeStore = {
 };
 
 describe("Recipe routes", () => {
-  const app = createApp({ recipes: store });
+  const app = createApp({
+    recipes: store,
+    search: { search: async () => ({ fallback: false, results: [] }) },
+  });
 
   it("GET /api/recipes answers the Recipe cards", async () => {
     const res = await app.request("/api/recipes");
