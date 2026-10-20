@@ -1,6 +1,6 @@
 # apps/api
 
-Hono + TypeScript API. Holds the Drizzle schema and migrations, the domain logic, the scripts under `scripts/` (`extract` now; `tag` and `seed` later) and `data/`.
+Hono + TypeScript API. Holds the Drizzle schema and migrations, the domain logic, the scripts under `scripts/` (`extract`, `tag`; `seed` later) and `data/` (hand-edited `tags.ts` and `recipes.ts`, script-written JSON).
 
 ## Data flow
 
@@ -11,7 +11,8 @@ The committed files under `data/` are the dataset; Postgres is a copy that `seed
 - `pnpm --filter @magkano/api dev`: `tsx watch` on `src/server.ts`, port `API_PORT` (default 8787), reading the root `.env`.
 - `pnpm db:generate` after editing `src/db/schema.ts`; `pnpm db:migrate` to apply. Both read `DATABASE_URL` from the root `.env`.
 - `pnpm --filter @magkano/api extract <pdf>`: writes `data/publications/<da|dti>-<date>.json`. See [src/extract/CLAUDE.md](src/extract/CLAUDE.md).
-- Tests: `pnpm vitest run --project api`. Route tests call `createApp().request(...)`; extract tests read `sample/`. None need a database.
+- `pnpm --filter @magkano/api tag [--check]`: proposes Tag Assignments into `data/tag-assignments.json`, or checks them against `data/reference-tags.json`. See [src/tagging/CLAUDE.md](src/tagging/CLAUDE.md).
+- Tests: `pnpm vitest run --project api`. Route tests call `createApp().request(...)`; extract tests read `sample/`; tagging tests stub the OpenAI client. None need a database or the network.
 
 ## Key files
 
@@ -27,7 +28,7 @@ The committed files under `data/` are the dataset; Postgres is a copy that `seed
 ## Env
 
 - `DATABASE_URL` (required for migrations and, later, routes that read data).
-- `OPENAI_API_KEY` (optional; search falls back to text matching).
+- `OPENAI_API_KEY` (optional; search falls back to text matching; `tag` needs it only when an item has no Tag Assignment).
 - `API_PORT` (optional, default 8787).
 
 No Clerk on the server in v1: every route is anonymous.

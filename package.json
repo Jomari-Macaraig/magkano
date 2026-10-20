@@ -16,7 +16,8 @@
     "lint": "biome check .",
     "format": "biome check --write .",
     "test": "vitest run",
-    "extract": "pnpm --filter @magkano/api extract"
+    "extract": "pnpm --filter @magkano/api extract",
+    "tag": "pnpm --filter @magkano/api tag"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.15",
