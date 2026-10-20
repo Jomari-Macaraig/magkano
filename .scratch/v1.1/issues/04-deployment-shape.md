@@ -1,7 +1,7 @@
 # Decide the deployment shape for this codebase
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 01, 02, 03
 
 ## Question
