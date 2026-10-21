@@ -71,18 +71,18 @@ An interactive bash wizard that walks the project owner through the one-time acc
 2. GitHub: Settings → General → "Automatically delete head branches".
 3. Neon: own account, Free plan, project `magkano`, Postgres 17, `aws-ap-southeast-1`.
 4. Vercel: import the repo on Hobby, Vite preset, root directory = repo root; the first deploy may fail. Offers `vercel link` so later checks can run.
-5. Neon-Managed integration: Production and Preview only (not Development), automatic branch cleanup on.
+5. Neon-Managed integration (started from the Neon Console's Integrations → Vercel, "Install from Vercel Marketplace"; never Vercel → Storage, which is the Vercel-Managed one): Production and Preview only (not Development), automatic branch cleanup on.
 6. Vercel env vars: `OPENAI_API_KEY` in Production and Preview, `VITE_CLERK_PUBLISHABLE_KEY` = `pk_test_` in Preview only. The Production `pk_live_` key is explicitly deferred.
 7. Clerk production (email only, domain `magkano.online`, Allowed Subdomains `www.magkano.online`), its CNAMEs (`clerk.`, `accounts.`, `clkmail.`, DKIM) and a recommended `_dmarc` TXT at GoDaddy, Deploy certificates. Ends by setting `pk_live_` in Production, which finishes step 6. Clerk DNS can take up to 48 hours, so this comes before the Vercel domain.
 8. Vercel domains: apex `magkano.online` canonical, `www` redirecting to it; at GoDaddy, Vercel's apex A and `www` CNAME replace the parked records, and forwarding is turned off.
-9. First deploys: redeploy production from `main`, a test PR's preview, then the spec's acceptance checks on the preview and on production.
+9. First deploys: preview first (push to the open v1.1 PR, or open a test PR), then merge to deploy production, with the spec's acceptance checks on each. Redeploying `main` before the v1.1 code is on it fails (`vite: command not found`).
 
 ### What it checks
 
 | Tool | Checks |
 |---|---|
 | `gh` | the repo has `deleteBranchOnMerge` on (step 2) |
-| `vercel` (only when the checkout is linked: `.vercel/project.json`) | Production has `DATABASE_URL` and `DATABASE_URL_UNPOOLED`; Preview and Development have no `DATABASE_URL*` of their own (step 5); the env var names from steps 6 and 7 exist in the right environments |
+| `vercel` (only when the checkout is linked: `.vercel/project.json` or `.vercel/repo.json`) | Production has `DATABASE_URL` and `DATABASE_URL_UNPOOLED`; Preview and Development have no `DATABASE_URL*` of their own (step 5); the env var names from steps 6 and 7 exist in the right environments |
 | `dig` | Clerk CNAMEs point at `clerk.services`, no CAA on the apex (step 7); the apex A matches the IP Vercel shows and `www` CNAMEs to `vercel-dns` (step 8) |
 | `curl` | `www.` and `http://` redirect to `https://magkano.online` (steps 8 and 9); on a deployment: `/api/health` returns `{"status":"ok"}`, `/api/recipes/sinigang-na-baboy` returns that Recipe, `/api/nope` returns the JSON `not_found`, and the deep link `/recipes/sinigang-na-baboy` serves HTML (step 9) |
 

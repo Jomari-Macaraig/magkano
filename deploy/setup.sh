@@ -439,8 +439,13 @@ app_checks() {
 # ── Vercel env checks (vercel CLI) ───────────────────────────────────────
 # Names only: `vercel env ls` never shows values, and only the first column
 # (the variable name) is kept.
+# `vercel link` writes .vercel/project.json; repo-wide links (newer CLIs) write repo.json.
+vercel_linked() {
+  [[ -f .vercel/project.json || -f .vercel/repo.json ]]
+}
+
 vercel_ready() {
-  have vercel && [[ -f .vercel/project.json ]]
+  have vercel && vercel_linked
 }
 
 # Fails (rather than listing nothing) when the CLI errors, e.g. when logged out.
@@ -480,7 +485,7 @@ vercel_check() {
   shift
   if ! have vercel; then
     skip_check "$label (vercel CLI not installed; see Vercel → Settings → Environment Variables)"
-  elif [[ ! -f .vercel/project.json ]]; then
+  elif ! vercel_linked; then
     skip_check "$label (repo not linked; run 'vercel link' to let the wizard check this)"
   else
     check "$label" "$@"
@@ -560,7 +565,7 @@ step_4() {
   step "Click Deploy. ${BOLD}It's fine if this first deploy fails${RESET}: nothing is configured yet."
   printf '\n'
   say "Optional: link this checkout so the wizard can check Vercel env vars for you."
-  note "  'vercel link' writes .vercel/project.json (IDs only, no secrets) and adds .vercel"
+  note "  'vercel link' writes .vercel/project.json or repo.json (IDs only, no secrets) and adds .vercel"
   note "  to .gitignore."
   warn "If it offers to pull environment variables (.env.local), answer No: that would"
   warn "write keys to disk."
@@ -580,8 +585,11 @@ step_5() {
   begin 5
   say "Neon gives every preview its own database branch and production the main branch."
   open_url "https://console.neon.tech/app/projects"
-  step "Open project magkano → ${BOLD}Integrations${RESET} → ${BOLD}Vercel${RESET} (the Neon-Managed one, not"
-  step "Vercel's own Marketplace/Storage Neon) → Add. Approve the install on Vercel."
+  step "Open project magkano → ${BOLD}Integrations${RESET} → ${BOLD}Vercel${RESET} → Install from Vercel Marketplace."
+  step "Approve the install on Vercel, connecting your Neon account and project magkano."
+  warn "Start here, from the Neon Console. Don't create a database from Vercel → Storage:"
+  warn "that's the Vercel-Managed integration (a new database, no branch cleanup)."
+  warn "If anything asks you to create a database or pick a region, stop: wrong integration."
   step "Pick the Vercel project ${BOLD}magkano${RESET}."
   step "Environments: tick ${BOLD}Production${RESET} and ${BOLD}Preview${RESET}. ${BOLD}Leave Development unticked${RESET}."
   step "Turn on ${BOLD}Automatically delete obsolete Neon branches${RESET} (automatic branch cleanup)."
@@ -720,19 +728,16 @@ step_8() {
 
 step_9() {
   begin 9
-  say "Needs the v1.1 code (vercel.json, api/index.ts) merged to main."
+  say "Preview first, then production. Until the v1.1 code (vercel.json, api/index.ts)"
+  say "is on main, redeploying main fails (vite: command not found): don't."
   open_url "https://vercel.com/dashboard"
-  step "Project magkano → Deployments → the latest Production deployment from ${BOLD}main${RESET} →"
-  step "  ⋯ → ${BOLD}Redeploy${RESET}. (Or merge to main, which deploys production.)"
-  step "In its build log, check lint, typecheck, test, migrate, seed and the web build pass."
-  step "  The migrate and seed lines must say ${BOLD}env=production${RESET} and Neon main's host."
-  pause "Press Enter once the production deploy is Ready."
-  printf '\n'
-  say "Open a test PR to get a preview (run these yourself):"
+  say "If the PR carrying the v1.1 code is still open, push to it: that's the test PR."
+  say "Otherwise open a test PR to get a preview (run these yourself):"
   note "  git switch -c test/preview-check main"
   note "  git commit --allow-empty -m 'Test the preview deploy'"
   note "  git push -u origin test/preview-check && gh pr create --fill"
-  step "In the preview's build log: migrate and seed say ${BOLD}env=preview${RESET} and a"
+  step "In the preview's build log: lint, typecheck, test, migrate, seed and the web build"
+  step "  pass, and migrate and seed say ${BOLD}env=preview${RESET} and a"
   step "  ${BOLD}preview/…${RESET} Neon host."
   local preview=""
   preview=$(ask_public "Paste the preview URL (https://…vercel.app, public; Enter to skip):")
@@ -751,7 +756,9 @@ step_9() {
   step "Push again to the PR: the Neon console shows the same preview/<branch> (no new one)."
   step "Merge the PR (GitHub deletes the branch). On the next preview deploy, Neon"
   step "  removes that old branch."
-  pause "Press Enter for the production checks."
+  step "Merging deploys production. In its build log, the same steps pass, and migrate"
+  step "  and seed say ${BOLD}env=production${RESET} and Neon main's host."
+  pause "Press Enter once the production deploy is Ready, for the production checks."
   printf '\n'
   say "Production:"
   app_checks "https://$DOMAIN"
