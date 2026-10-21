@@ -7,7 +7,10 @@
       "!**/migrations/meta",
       "!.scratch",
       "!sample",
-      "!apps/api/data/embeddings.json"
+      "!apps/api/data/embeddings.json",
+      "!.pnpm-store",
+      "!.vercel",
+      "!vercel.json"
     ]
   },
   "formatter": { "indentStyle": "space", "indentWidth": 2, "lineWidth": 100 },

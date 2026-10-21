@@ -16,7 +16,7 @@ Magkano runs on one Vercel project: production on `magkano.online` (Neon `main`,
 
 `vercel.json`'s `buildCommand`, in order, and any failure stops the deploy (a failed production build leaves the previous deployment serving):
 
-1. `pnpm lint`, `pnpm typecheck`, `pnpm test` (tests never need Postgres).
+1. `pnpm lint`, `pnpm typecheck`, `pnpm test` (tests never need Postgres). Vercel's build tree has a `.pnpm-store/` and a minified copy of `vercel.json`, so `biome.json` excludes both (and `.vercel`).
 2. `pnpm db:migrate` then `pnpm seed`, both on `DATABASE_URL_UNPOOLED ?? DATABASE_URL`. Each prints `<task>: env=<VERCEL_ENV|local> host=<host>` (host only, never the URL) before writing, so the log shows which database a build writes to. `seed` re-runs its one-transaction wipe and reload on every build, production included. If Recipe chunks are missing from `apps/api/data/embeddings.json`, seed embeds them and, on Vercel, warns to run `pnpm seed` locally and commit the file.
 3. `pnpm --filter @magkano/web build`: `vite build` throws when `VITE_CLERK_PUBLISHABLE_KEY` is unset (a missing key fails the deploy rather than shipping a blank page). `vite dev` doesn't check.
 
