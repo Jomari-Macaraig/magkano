@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "pnpm lint && pnpm typecheck && pnpm test && pnpm db:migrate && pnpm seed && pnpm --filter @magkano/web build",
+  "outputDirectory": "apps/web/dist",
+  "regions": ["sin1"],
+  "functions": { "api/index.ts": { "maxDuration": 30 } },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

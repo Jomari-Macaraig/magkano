@@ -2,6 +2,7 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { createDb } from "../src/db/client.ts";
+import { type WriteTarget, writeTarget } from "../src/db/url.ts";
 import {
   type EmbeddingCache,
   embedRecipeChunks,
@@ -13,11 +14,14 @@ import { readSeedInput } from "../src/seed/input.ts";
 import { runSeed } from "../src/seed/seed.ts";
 import { writeSeedPlan } from "../src/seed/write.ts";
 
-const databaseUrl = process.env.DATABASE_URL;
-if (!databaseUrl) {
-  console.error("seed: DATABASE_URL is not set (see .env.example).");
+let target: WriteTarget;
+try {
+  target = writeTarget("seed", process.env);
+} catch (err) {
+  console.error(err instanceof Error ? err.message : err);
   process.exit(1);
 }
+console.log(target.logLine);
 
 const dataDir = fileURLToPath(new URL("../data/", import.meta.url));
 const input = readSeedInput(dataDir);
@@ -29,7 +33,7 @@ const cache: EmbeddingCache = existsSync(cachePath)
 const apiKey = process.env.OPENAI_API_KEY;
 const openAiEmbed = createOpenAiEmbedder(apiKey, { timeoutMs: 120_000, maxRetries: 2 });
 
-const db = createDb(databaseUrl);
+const db = createDb(target.url);
 try {
   let summary = "";
   const result = await runSeed(input, async (plan) => {
@@ -40,6 +44,11 @@ try {
         );
       }
       console.log(`Embedding ${texts.length} new Recipe chunks…`);
+      if (process.env.VERCEL === "1") {
+        console.warn(
+          "seed: Vercel discards the rewritten data/embeddings.json, so these vectors are re-embedded on every deploy. Run `pnpm seed` locally and commit apps/api/data/embeddings.json.",
+        );
+      }
       return openAiEmbed(texts);
     });
     // Written before the database: the vectors are good even if the load fails.

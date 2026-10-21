@@ -4,7 +4,7 @@
 
 ## Run
 
-- `pnpm seed` (root) or `pnpm --filter @magkano/api seed`. Reads `DATABASE_URL` from the root `.env`; run `pnpm db:up && pnpm db:migrate` first.
+- `pnpm seed` (root) or `pnpm --filter @magkano/api seed`. Writes to `DATABASE_URL_UNPOOLED` or else `DATABASE_URL` (root `.env`), printing the env and host first (see [../../CLAUDE.md](../../CLAUDE.md#database-urls)); run `pnpm db:up && pnpm db:migrate` first.
 - On success it prints the row counts. On any failure it prints every problem, exits 1 and leaves the database unchanged.
 - Re-running gives the same database: `TRUNCATE … RESTART IDENTITY`, then inserts in a fixed order. Recipe ids are their seed keys, so they never change. Integer ids happen to repeat too, but nothing on the device may store them.
 
